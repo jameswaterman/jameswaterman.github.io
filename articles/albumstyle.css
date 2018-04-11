@@ -1,8 +1,3 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
 html {
     text-align: center;
     font-family: "roboto", arial;
@@ -25,8 +20,8 @@ h1, h2, .link-position a, h3 {
 
 div.name-top {
     position: absolute;
-    top: 20px;
-    left: 25px;
+    top: 2%;
+    left: 1%;
 
     text-align: left;
 }
@@ -41,17 +36,17 @@ h1 a {
 h2 {
     font-size: 17px;
     font-weight: 400;
-    margin-left: 10px;}
+    margin: 2% 0 0 10px;
+}
 
 /*header navigation links*/
 
-
-
 div.link-position {
-  position: absolute;
-  right: 30px;
-  top: 45px;
+    position: absolute;
+    right: 30px;
+    top: 45px;
 }
+
 .link-position a {
     text-decoration: none;
     color: grey;
@@ -60,7 +55,6 @@ div.link-position {
     text-decoration: none;
     margin: 0 18px;
 }
-
 
 .link-position a:hover {
     color: #444;
@@ -71,6 +65,57 @@ a.current-page {
     font-weight: 600;
 }
 
+/* Dropdown Menu */
+
+.dropdown {
+    position: relative;
+    display: none;
+    float: right;
+    margin: 1% 2%;
+    border-radius: 10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    width: 20%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown span {
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: black;
+    border: 1px solid black;
+    margin: 8px;
+    border-radius: 20px
+}
+
+.dropdown-content nav a {
+    display: block;
+    padding: 20px 0 20px 10px;
+    border-bottom: 1px solid #d3d3d3;
+    color: grey;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdown-content nav a:hover {
+    color: #444;
+}
+
+.dropdown:hover {
+    background-color: #f3f3f3;
+}
 
 
 
@@ -154,6 +199,21 @@ footer p {
     font-size: 16px;
     padding: 0;
     text-align: center;
+}
+
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 1024px) {
+    .link-position {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
 }
 
 
