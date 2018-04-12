@@ -1,11 +1,7 @@
-* {
-    padding: 0;
-    margin: 0;
-}
-
 html {
     text-align: center;
     font-family: "roboto", arial;
+    font-size: 20px;
 }
 
 
@@ -32,12 +28,12 @@ div.name-top {
 h1 a {
     font-weight: 800;
     color: black;
-    font-size: 35px;
+    font-size: 1.75rem;
     text-decoration: none;
 }
 
 h2 {
-    font-size: 17px;
+    font-size: 0.85rem;
     font-weight: 400;
     margin: 2% 0 0 10px;
 }
@@ -53,7 +49,7 @@ div.link-position {
 .link-position a {
     text-decoration: none;
     color: grey;
-    font-size: 18px;
+    font-size: 0.9rem;
     font-weight: 400;
     text-decoration: none;
     margin: 0 18px;
@@ -132,8 +128,11 @@ a.current-page {
 
 /*Body of the home page*/
 
+
 .entry {
-    margin: 30px 0;
+    padding: 30px 0;
+    width: 95%;
+    max-width: 800px;
 }
 
 .entry p {
@@ -142,7 +141,7 @@ a.current-page {
 
 .entry a {
     text-decoration: none;
-    font-size: 50px;
+    font-size: 2.5rem;
     color: black;
     text-transform: uppercase;
     font-weight: 300;
@@ -150,37 +149,76 @@ a.current-page {
     line-height: 40px;
 }
 
+.entry a img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 .date {
     color: black;
     text-decoration: underline;
-    font-size: 15px;
+    font-size: 0.75rem;
     font-weight: 400;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .entry {
+        max-width: 95%;
+    }
 }
 
 
 
 /*About me page*/
 
+.about-container {
+    max-width: 720px;
+    width: 95%;
+    overflow: hidden;
+}
+
 h3 {
     font-weight: 300;
-    font-size: 50px;
+    font-size: 2.5rem;
     text-transform: uppercase;
 }
 
 p {
-    width: 600px;
+    width: 80%;
     padding: 30px 30px 0 30px;
-    font-size: 20px;
+    font-size: 1rem;
 }
 
 img.selfportrait {
     border-top: 2px solid #d3d3d3;
     padding-top: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .about-container {
+        max-width: 95%;
+    }
 }
 
 
 
 /*Contact me page*/
+
+.contact-info {
+    max-width: 850px;
+    width: 95%;
+    overflow: hidden; 
+}
+
+.contact-info img {
+    width: 100%;
+    height: auto;
+}
 
 em {
     color: black;
@@ -189,7 +227,7 @@ em {
 
 
 .email-size {
-    font-size: 23px;
+    font-size: 1.15rem;
 }
 
 em:hover {
@@ -198,6 +236,14 @@ em:hover {
 
 .contact-info {
     padding-top: 50px;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    .contact-info {
+        max-width: 95%;
+    }
 }
 
 
