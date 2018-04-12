@@ -1,6 +1,7 @@
 html {
     text-align: center;
     font-family: "roboto", arial;
+    font-size: 20px;
 }
 
 
@@ -29,12 +30,12 @@ div.name-top {
 h1 a {
     font-weight: 800;
     color: black;
-    font-size: 35px;
+    font-size: 1.75rem;
     text-decoration: none;
 }
 
 h2 {
-    font-size: 17px;
+    font-size: 0.85rem;
     font-weight: 400;
     margin: 2% 0 0 10px;
 }
@@ -50,7 +51,7 @@ div.link-position {
 .link-position a {
     text-decoration: none;
     color: grey;
-    font-size: 18px;
+    font-size: 0.9rem;
     font-weight: 400;
     text-decoration: none;
     margin: 0 18px;
@@ -133,42 +134,56 @@ a.current-page {
 
 /*Blog entry body*/
 
-div.body {
-  width: 720px;
+.body {
+    max-width: 720px;
+    width: 95%;
+    overflow: hidden;
 }
+
+.body img {
+    max-width: 100%;
+    height: auto; 
+}  
 
 h3 {
     font-weight: 300;
-    font-size: 50px;
+    font-size: 2.5rem;
     text-transform: uppercase;
 }
 
 
 p.date {
-  text-align: left;
-  padding: 0;
-  font-size: 16px;
-  margin: 1px 1px 25px 1px;
-  font-family: "nunito sans", sans-serif;
-  border-bottom: 2px solid #d3d3d3;
+    text-align: left;
+    padding: 0;
+    font-size: 0.8rem;
+    margin: 1px 1px 25px 1px;
+    font-family: "nunito sans", sans-serif;
+    border-bottom: 2px solid #d3d3d3;
 
 }
 
 p {
-  padding: 30px 0;
-  position: relative;
-  font-size: 19px;
-  text-align: left;
+    padding: 30px 0;
+    position: relative;
+    font-size: 0.95rem;
+    text-align: left;
 }
 
 .images {
-  margin: 10px 0;
+    margin: 10px 0;
 }
 
 .back_to_top {
-  margin: 70px 0 0 0;
-  color: grey;
-  font-size: 17px;
+    margin: 70px 0 0 0;
+    color: grey;
+    font-size: 0.85;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .body {
+        max-width: 95%;
+    }
 }
 
 
@@ -216,6 +231,27 @@ footer p {
     }
 }
 
+@media only screen and (max-width: 700px) {
+
+    h3 {
+        margin: 20px 0 40px 0;
+    }
+
+    footer {
+        font-size: 0.7rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+
+    h1 a {
+        font-size: 1.3rem;
+    }
+
+    h2 {
+        font-size: 0.7rem;
+    }
+}
 
 
 
