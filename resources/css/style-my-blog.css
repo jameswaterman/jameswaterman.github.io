@@ -308,6 +308,22 @@ footer p {
     .footerlinks .insta {
         display: none;
     }
+
+    .head-home {
+        margin-bottom: 0;
+    }
+
+    .entry {
+        padding-top: 10px;
+    }
+
+    .footerlinks a {
+        margin: 0 10px;
+    }
+
+    .contact-info {
+        padding-top: 20px;
+    }
 }
 
 
