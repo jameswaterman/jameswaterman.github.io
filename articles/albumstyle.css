@@ -204,6 +204,7 @@ footer {
 
 .footerlinks {
     padding: 20px;
+    font-size: 0.8rem;
 }
 
 .footerlinks a:hover {
@@ -234,7 +235,8 @@ footer p {
 @media only screen and (max-width: 700px) {
 
     h3 {
-        margin: 20px 0 40px 0;
+        margin-bottom: 40px;
+        padding-top: 20px;
     }
 
     footer {
@@ -259,10 +261,6 @@ footer p {
 
     .footerlinks a {
         margin: 0 10px;
-    }
-
-    h3 {
-        padding-top: 20px;
     }
 }
 
