@@ -118,6 +118,14 @@ a.current-page {
     background-color: #f3f3f3;
 }
 
+.dropdown:active .dropdown-content {
+    display: block;
+}
+
+.dropdown:focus .dropdown-content {
+    display: block;
+}
+
 
 
 
