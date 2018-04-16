@@ -96,14 +96,6 @@ a.current-page {
     display: block;
 }
 
-.dropdown:active .dropdown-content {
-    display: block;
-}
-
-.dropdown:focus .dropdown-content {
-    display: block;
-}
-
 .dropdown span {
     display: block;
     width: 50px;
