@@ -10,7 +10,7 @@ html {
 
 /*Header*/
 
-/*header {
+header {
   margin-bottom: 20px;
   height: 100px;
 }
@@ -38,11 +38,11 @@ h2 {
     font-size: 0.85rem;
     font-weight: 400;
     margin: 2% 0 0 10px;
-}*/
+}
 
 /*header navigation links*/
 
-/*div.link-position {
+div.link-position {
     position: absolute;
     right: 30px;
     top: 45px;
@@ -64,11 +64,11 @@ h2 {
 a.current-page {
     color: black; 
     font-weight: 600;
-}*/
+}
 
 /* Dropdown Menu */
 
-/*.dropdown {
+.dropdown {
     position: relative;
     display: none;
     float: right;
@@ -116,7 +116,7 @@ a.current-page {
 
 .dropdown:hover {
     background-color: #f3f3f3;
-}*/
+}
 
 
 
@@ -168,6 +168,7 @@ p {
     position: relative;
     font-size: 0.95rem;
     text-align: left;
+    line-height: 1.4;
 }
 
 .images {
@@ -192,7 +193,7 @@ p {
 
 /*Footer*/
 
-/*footer {
+footer {
     margin-top: 100px;
     border-top: 1px solid #d3d3d3
 }
@@ -216,14 +217,14 @@ footer p {
     font-size: 16px;
     padding: 0;
     text-align: center;
-}*/
+}
 
 
 
 
 /* Media Queries */
 
-/*@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     .link-position {
         display: none;
     }
@@ -263,7 +264,7 @@ footer p {
     .footerlinks a {
         margin: 0 10px;
     }
-}*/
+}
 
 
 

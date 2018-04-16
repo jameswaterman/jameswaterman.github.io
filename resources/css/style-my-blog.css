@@ -15,7 +15,7 @@ html {
 
 /*Header*/
 
-/*header {
+header {
   margin-bottom: 20px;
   height: 100px;
 }
@@ -43,11 +43,11 @@ h2 {
     font-size: 0.85rem;
     font-weight: 400;
     margin: 2% 0 0 10px;
-}*/
+}
 
 /*header navigation links*/
 
-/*div.link-position {
+div.link-position {
     position: absolute;
     right: 30px;
     top: 45px;
@@ -69,11 +69,11 @@ h2 {
 a.current-page {
     color: black; 
     font-weight: 600;
-}*/
+}
 
 /* Dropdown Menu */
 
-/*.dropdown {
+.dropdown {
     position: relative;
     display: none;
     float: right;
@@ -121,7 +121,7 @@ a.current-page {
 
 .dropdown:hover {
     background-color: #f3f3f3;
-}*/
+}
 
 
 /*General css*/
@@ -196,6 +196,7 @@ p {
     width: 80%;
     padding: 30px 30px 0 30px;
     font-size: 1rem;
+    line-height: 1.4;
 }
 
 img.selfportrait {
@@ -263,7 +264,7 @@ em:hover {
 
 /*Footer*/
 
-/*footer {
+footer {
     margin-top: 100px;
     border-top: 1px solid #d3d3d3
 }
@@ -286,12 +287,12 @@ em:hover {
 footer p {
     font-size: 16px;
     padding: 0;
-}*/
+}
 
 
  /* Media Queries */
 
-/*@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     .link-position {
         display: none;
     }
@@ -338,7 +339,7 @@ footer p {
     .contact-info {
         padding-top: 20px;
     }
-}*/
+}
 
 
 
