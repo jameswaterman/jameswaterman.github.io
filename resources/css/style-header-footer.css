@@ -1,16 +1,17 @@
-html {
-    text-align: center;
-    font-family: "roboto", arial;
-    font-size: 20px;
+/*General css*/
+
+.center {
+    display: block;
+    margin: 0 auto;
 }
 
 
 
 
 
-/*Header*/
+/* Header */
 
-/*header {
+header {
   margin-bottom: 20px;
   height: 100px;
 }
@@ -38,11 +39,11 @@ h2 {
     font-size: 0.85rem;
     font-weight: 400;
     margin: 2% 0 0 10px;
-}*/
+}
 
 /*header navigation links*/
 
-/*div.link-position {
+div.link-position {
     position: absolute;
     right: 30px;
     top: 45px;
@@ -64,11 +65,11 @@ h2 {
 a.current-page {
     color: black; 
     font-weight: 600;
-}*/
+}
 
 /* Dropdown Menu */
 
-/*.dropdown {
+.dropdown {
     position: relative;
     display: none;
     float: right;
@@ -116,83 +117,15 @@ a.current-page {
 
 .dropdown:hover {
     background-color: #f3f3f3;
-}*/
-
-
-
-
-
-/*General css*/
-
-.center {
-    display: block;
-    margin: 0 auto;
 }
 
-
-
-
-
-/*Blog entry body*/
-
-.body {
-    max-width: 720px;
-    width: 95%;
-    overflow: hidden;
-}
-
-.body img {
-    max-width: 100%;
-    height: auto; 
-}  
-
-h3 {
-    font-weight: 300;
-    font-size: 2.5rem;
-    text-transform: uppercase;
-}
-
-
-p.date {
-    text-align: left;
-    padding: 0;
-    font-size: 0.8rem;
-    margin: 1px 1px 25px 1px;
-    font-family: "nunito sans", sans-serif;
-    border-bottom: 2px solid #d3d3d3;
-
-}
-
-p {
-    padding: 30px 0;
-    position: relative;
-    font-size: 0.95rem;
-    text-align: left;
-}
-
-.images {
-    margin: 10px 0;
-}
-
-.back_to_top {
-    margin: 70px 0 0 0;
-    color: grey;
-    font-size: 0.85;
-}
-
-@media only screen and (max-width: 800px) {
-
-    .body {
-        max-width: 95%;
-    }
-}
 
 
 
 
 /*Footer*/
 
-/*footer {
+footer {
     margin-top: 100px;
     border-top: 1px solid #d3d3d3
 }
@@ -215,15 +148,16 @@ p {
 footer p {
     font-size: 16px;
     padding: 0;
+}
+
+.copyright {
     text-align: center;
-}*/
+}
 
 
+ /* Media Queries */
 
-
-/* Media Queries */
-
-/*@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
     .link-position {
         display: none;
     }
@@ -234,11 +168,6 @@ footer p {
 }
 
 @media only screen and (max-width: 700px) {
-
-    h3 {
-        margin-bottom: 40px;
-        padding-top: 20px;
-    }
 
     footer {
         font-size: 0.7rem;
@@ -260,21 +189,20 @@ footer p {
         display: none;
     }
 
+    .head-home {
+        margin-bottom: 0;
+    }
+
+    .entry {
+        padding-top: 10px;
+    }
+
     .footerlinks a {
         margin: 0 10px;
     }
-}*/
 
-
-
-
-
-
-
-
-
-
-
-
-
+    .contact-info {
+        padding-top: 20px;
+    }
+}
 
