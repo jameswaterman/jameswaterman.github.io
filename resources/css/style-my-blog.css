@@ -28,7 +28,6 @@ div.name-top {
     position: absolute;
     top: 2%;
     left: 1%;
-
     text-align: left;
 }
 
@@ -166,11 +165,15 @@ a.current-page {
     max-width: 100%;
     height: auto;
     display: block;
+    -webkit-transition: -webkit-transform 500ms ease;
+    transition: -webkit-transform 500ms ease;
     transition: transform 500ms ease;
+    transition: transform 500ms ease, -webkit-transform 500ms ease;
 }
 
 .entry a img:hover {
-    transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
 }
 
 .date {
