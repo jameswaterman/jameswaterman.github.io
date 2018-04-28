@@ -55,6 +55,7 @@ div.link-position {
     font-weight: 400;
     text-decoration: none;
     margin: 0 18px;
+    transition: color 325ms;
 }
 
 .link-position a:hover {
@@ -74,6 +75,7 @@ a.current-page {
     float: right;
     margin: 1% 2%;
     border-radius: 10px;
+    transition: background-color 300ms;
 }
 
 .dropdown-content {
@@ -179,6 +181,11 @@ p {
     margin: 70px 0 0 0;
     color: grey;
     font-size: 0.85;
+    transition: color 325ms;
+}
+
+.back_to_top:hover {
+    color: #444;
 }
 
 @media only screen and (max-width: 800px) {
@@ -202,6 +209,7 @@ footer {
     margin: 0 20px;
     color: grey;
     font-weight: 300;
+    transition: color 325ms;
 }
 
 .footerlinks {
