@@ -137,7 +137,7 @@ a.current-page {
 
 
 .entry {
-    padding: 30px 0;
+    padding: 0.25rem 0;
     width: 95%;
     max-width: 825px;
 }
