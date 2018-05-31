@@ -100,6 +100,7 @@ a.current-page {
     border: 1px solid black;
     margin: 8px;
     border-radius: 20px;
+    -webkit-transition: all 250ms;
     transition: all 250ms;
 }
 
@@ -121,22 +122,27 @@ a.current-page {
 }
 
 .bar1 {
-    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
     position: relative;
     top: 15px;
+    -webkit-transition: all 250ms;
     transition: all 250ms;
 }
 
 .bar2 {
     background-color: transparent !important;
     border: transparent !important;
+    -webkit-transition: all 150ms;
     transition: all 150ms;
 }
 
 .bar3 {
-    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg);
     position: relative;
     bottom: 13px;
+    -webkit-transition: all 250ms;
     transition: all 250ms;
 }
 
