@@ -126,11 +126,7 @@ a.current-page {
 }
 
 .bar1 {
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    position: relative;
-    top: 15px;
-    -webkit-transition: all 250ms;
+    transform: rotate(45deg) translate(11px, 11px);
     transition: all 250ms;
 }
 
@@ -142,11 +138,7 @@ a.current-page {
 }
 
 .bar3 {
-    -webkit-transform: rotate(-45deg);
-            transform: rotate(-45deg);
-    position: relative;
-    bottom: 13px;
-    -webkit-transition: all 250ms;
+    transform: rotate(-45deg) translate(9px, -9px);
     transition: all 250ms;
 }
 
