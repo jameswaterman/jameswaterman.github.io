@@ -126,7 +126,9 @@ a.current-page {
 }
 
 .bar1 {
-    transform: rotate(45deg) translate(11px, 11px);
+    -webkit-transform: rotate(45deg) translate(11px, 11px);
+            transform: rotate(45deg) translate(11px, 11px);
+    -webkit-transition: all 250ms;
     transition: all 250ms;
 }
 
@@ -138,10 +140,11 @@ a.current-page {
 }
 
 .bar3 {
-    transform: rotate(-45deg) translate(9px, -9px);
+    -webkit-transform: rotate(-45deg) translate(9px, -9px);
+            transform: rotate(-45deg) translate(9px, -9px);
+    -webkit-transition: all 250ms;
     transition: all 250ms;
 }
-
 
 /*General css*/
 
