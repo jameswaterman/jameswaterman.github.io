@@ -354,15 +354,11 @@ footer p {
     }
 
     header.head-home {
-        height: 600px;
+        height: 500px;
     }
 }
 
 @media only screen and (max-width: 700px) {
-
-    header.header-home {
-        height: 200px;
-    }
 
     footer {
         font-size: 0.7rem;
