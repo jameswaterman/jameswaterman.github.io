@@ -217,6 +217,10 @@ a.current-page {
     .entry {
         max-width: 95%;
     }
+
+      header.header-home {
+        height: 475px;
+    }
 }
 
 
