@@ -360,6 +360,10 @@ footer p {
 
 @media only screen and (max-width: 700px) {
 
+    header.header-home {
+        height: 300px;
+    }
+
     footer {
         font-size: 0.7rem;
     }
@@ -370,10 +374,6 @@ footer p {
 }
 
 @media only screen and (max-width: 480px) {
-
-    header.header-home {
-        height: 300px;
-    }
 
     h1 a {
         font-size: 1rem;
