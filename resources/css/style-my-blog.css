@@ -20,6 +20,13 @@ header {
   height: 100px;
 }
 
+header.head-home {
+    height: 700px;
+    background-image: url("../images/landing-photo3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
 h1, h2, .link-position a, h3 {
     font-family: "nunito sans", sans-serif;
 }
@@ -329,13 +336,25 @@ footer p {
 
  /* Media Queries */
 
+@media only screen and (max-width: 2880px) {
+
+    html {
+        max-width: 2880px;
+    }
+    
+
 @media only screen and (max-width: 1024px) {
+    
     .link-position {
         display: none;
     }
 
     .dropdown {
         display: block;
+    }
+
+    header.head-home {
+        height: 600px;
     }
 }
 
