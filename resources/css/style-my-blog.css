@@ -164,6 +164,14 @@ a.current-page {
 
 /*Body of the home page*/
 
+p.intro {
+    width: 90%;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+    border-top: 2px solid #d3d3d3;
+    border-bottom: 2px solid #d3d3d3;   
+}
 
 .entry {
     padding: 0.25rem 0;
@@ -313,7 +321,7 @@ em:hover {
 
 footer {
     margin-top: 100px;
-    border-top: 1px solid #d3d3d3
+    border-top: 1px solid #d3d3d3;
 }
 
 .footerlinks a {
