@@ -401,7 +401,7 @@ footer p {
     }
 
     .head-home {
-        margin-bottom: 0;
+        margin-bottom: 15px;
     }
 
     .entry {
@@ -414,6 +414,10 @@ footer p {
 
     .contact-info {
         padding-top: 20px;
+    }
+
+    p {
+        font-size: 0.9rem;
     }
 }
 
