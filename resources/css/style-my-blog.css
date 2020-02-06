@@ -38,7 +38,7 @@ div.name-top {
     text-align: left;
 }
 
-h1 a {
+h1 {
     font-weight: 800;
     color: black;
     font-size: 1.75rem;
@@ -49,6 +49,7 @@ h2 {
     font-size: 0.85rem;
     font-weight: 400;
     margin: 2% 0 0 10px;
+    color: black;
 }
 
 /*header navigation links*/
@@ -388,7 +389,7 @@ footer p {
 
 @media only screen and (max-width: 480px) {
 
-    h1 a {
+    h1 {
         font-size: 1rem;
     }
 
