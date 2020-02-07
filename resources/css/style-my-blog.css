@@ -236,9 +236,10 @@ p.intro {
 
 .date {
     color: black;
-    text-decoration: underline;
     font-size: 0.75rem;
     font-weight: 400;
+    border-bottom: 1px solid;
+    padding-bottom: 3px;
 }
 
 @media only screen and (max-width: 900px) {
