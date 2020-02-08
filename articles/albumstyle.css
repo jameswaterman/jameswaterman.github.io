@@ -160,7 +160,7 @@ a.current-page {
 /*Blog entry body*/
 
 .body {
-    max-width: 720px;
+    max-width: 675px;
     width: 95%;
     overflow: hidden;
 }
