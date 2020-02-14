@@ -235,6 +235,8 @@ p.intro {
             transform: scale(1.15);
 }
 
+
+
 .date {
     color: black;
     font-size: 0.75rem;
@@ -447,7 +449,7 @@ footer p {
     }
 
     .entry {
-        padding-top: 10px;
+        padding-top: 3px; /*changed from 10px*/
     }
 
     .footerlinks a {

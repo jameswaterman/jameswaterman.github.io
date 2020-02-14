@@ -196,7 +196,7 @@ p {
 }
 
 .images {
-    margin: 10px 0;
+    margin: 8px 0; /*Changed from 10px*/
 }
 
 .back_to_top {
