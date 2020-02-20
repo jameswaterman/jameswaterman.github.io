@@ -21,7 +21,7 @@ header {
 }
 
 header.head-home {
-    height: 700px;
+    height: 780px;
     background-image: url("../images/landing-photo3.jpg");
     background-size: cover;
     background-position: center;
@@ -380,6 +380,13 @@ footer p {
     html {
         max-width: 2880px;
     }
+
+@media only screen and (max-width: 1400px) {
+
+    header.head-home {
+        height: 700px;
+    }
+}
     
 
 @media only screen and (max-width: 1024px) {
