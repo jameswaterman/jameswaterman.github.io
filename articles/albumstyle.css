@@ -154,8 +154,30 @@ a.current-page {
 }
 
 
+/*Show more show less toggle*/
 
+.more-content {
+    display: none;
+}
 
+.show-more::after {
+    content: " more ⬇";
+}
+
+.show-less::after {
+    content: " less ⬆";
+}
+
+.show-button {
+    cursor: pointer;
+    color: grey;
+    text-decoration: underline;
+    transition: 325ms;
+}
+
+.show-button:hover {
+    color: #444;
+}
 
 /*Blog entry body*/
 
