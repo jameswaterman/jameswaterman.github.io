@@ -32,4 +32,32 @@
     	<loc>https://jameswaterman.uk/articles/5-austria-feb2020/austria-feb2020.html</loc>
     	<priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://jameswaterman.uk/portfolio.html</loc>
+        <priority>0.9</priority>
+    </url>
+    <url>
+        <loc>https://jameswaterman.uk/portfolio/portrait.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://jameswaterman.uk/portfolio/hospitality.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://jameswaterman.uk/portfolio/cars.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://jameswaterman.uk/portfolio/pets.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://jameswaterman.uk/portfolio/sport.html</loc>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://jameswaterman.uk/portfolio/landscape.html</loc>
+        <priority>0.8</priority>
+    </url>    
 </urlset>
