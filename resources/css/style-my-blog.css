@@ -417,6 +417,10 @@ footer p {
     .entry img:hover {
         transform: none;
     }
+
+    .footerlinks .insta {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -447,10 +451,6 @@ footer p {
         margin-left: 2%;
     }
 
-    .footerlinks .insta {
-        display: none;
-    }
-
     .head-home {
         margin-bottom: 15px;
     }
@@ -460,7 +460,8 @@ footer p {
     }
 
     .footerlinks a {
-        margin: 0 10px;
+        display: block;
+        margin: 15px 0;
     }
 
     .contact-info {

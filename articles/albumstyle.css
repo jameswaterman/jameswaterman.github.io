@@ -327,6 +327,10 @@ footer p {
     .insta-logo {
         width: 22px;
     }
+
+    .footerlinks .insta {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -351,12 +355,9 @@ footer p {
         font-size: 0.8rem;
     }
 
-    .footerlinks .insta {
-        display: none;
-    }
-
     .footerlinks a {
-        margin: 0 10px;
+        display: block;
+        margin: 15px 0;
     }
 
     .insta-logo {
