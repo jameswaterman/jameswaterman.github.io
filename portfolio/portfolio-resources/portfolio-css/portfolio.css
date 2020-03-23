@@ -394,7 +394,10 @@ footer p {
     }
 
     div.name-top {
-        top: 5%;
+        position: relative;
+        float: left;
+        top: 2%;
+        left: 1%;
     }
 }
 
