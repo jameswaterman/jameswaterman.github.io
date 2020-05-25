@@ -1,0 +1,309 @@
+
+/*Banner*/
+
+.banner {
+    display: none;
+}
+
+.banner-left {
+    float: left;
+    width: 50%;
+    
+    color: black;
+}
+
+.banner-link-container {
+    display: inline-block;
+    width: 50%;
+    padding: 10px 0 10px 0;
+    background-color: rgb(248, 248, 248, 0.7);
+}
+
+.banner-link {
+    color: grey;
+    font-size: 18px;
+    font-family: "nunito sans", sans-serif;
+    font-weight: 400;
+    transition: color 325ms;
+    text-decoration: none;
+}
+
+.banner-link:hover {
+    color: #444;
+}
+
+.current-banner-page {
+    color: black;
+    font-weight: 600;
+    background-color: #e9e9e9;
+}
+
+
+
+
+
+
+/*Header*/
+
+.header {
+  margin-bottom: 20px;
+  height: 100px;
+}
+
+.header.head-home {
+    height: 780px;
+    background-image: url("../images/landing-photo3.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.name-top {
+    position: absolute;
+    top: 2%;   
+    left: 1%;
+    text-align: left;
+}
+
+.main-title {
+    font-weight: 800;
+    color: black;
+    font-size: 1.75rem;
+    text-decoration: none;
+}
+
+.main-sub-heading {
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin: 2% 0 0 10px;
+    color: black;
+}
+
+
+
+/*header navigation links*/
+
+.link-position {
+    position: absolute;
+    right: 30px;
+    top: 45px; 
+}
+
+.nav-link {
+    text-decoration: none;
+    color: grey;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-decoration: none;
+    margin: 0 18px;
+    transition: color 325ms;
+}
+
+.nav-link:hover {
+    color: #444;
+}
+
+.nav-link.current-page {
+    color: black; 
+    font-weight: 600;
+}
+
+/* Dropdown Menu */
+
+.dropdown {
+    position: relative;
+    display: none;
+    float: right;
+    margin: 1% 2%;
+    border-radius: 10px;
+}
+
+.hamburger:hover {
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    width: 20%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    right: 0;
+    z-index: 1;
+}
+
+.dropdown span {
+    display: block;
+    width: 50px;
+    height: 5px;
+    background-color: black;
+    border: 1px solid black;
+    margin: 8px;
+    border-radius: 20px;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+}
+
+.dropdown-content nav a {
+    display: block;
+    padding: 20px 0 20px 10px;
+    border-bottom: 1px solid #d3d3d3;
+    color: grey;
+    text-align: center;
+    text-decoration: none;
+}
+
+.dropdown-content nav a:hover {
+    color: #444;
+}
+
+.dropdown-background {
+    background-color: #f3f3f3;
+}
+
+.bar1 {
+    -webkit-transform: rotate(45deg) translate(11px, 11px);
+            transform: rotate(45deg) translate(11px, 11px);
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+}
+
+.bar2 {
+    background-color: transparent !important;
+    border: transparent !important;
+    -webkit-transition: all 150ms;
+    transition: all 150ms;
+}
+
+.bar3 {
+    -webkit-transform: rotate(-45deg) translate(9px, -9px);
+            transform: rotate(-45deg) translate(9px, -9px);
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+}
+
+/*General css*/
+
+.title-font {
+    font-family: "nunito sans", sans-serif;
+}
+
+/*Footer*/
+
+.footer {
+    margin-top: 100px;
+    border-top: 1px solid #d3d3d3;
+}
+
+.footerlink {
+    margin: 0 20px;
+    color: grey;
+    font-weight: 300;
+    transition: color 325ms;
+    text-decoration: underline;
+}
+
+.footerlinks {
+    padding: 30px;
+    font-size: 0.8rem;
+}
+
+.footerlink:hover {
+    color: #222;
+}
+
+.copyright {
+    font-size: 16px;
+    padding: 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+
+/* Media Queries */
+
+@media only screen and (max-width: 1400px) {
+
+    header.head-home {
+        height: 700px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+
+    .link-position {
+        display: none;
+    }
+
+    .dropdown {
+        display: block;
+    }
+
+    .banner {
+        display: block;
+    }
+
+    div.name-top {
+        position: relative;
+        float: left;
+        top: 0.4rem;
+        left: 1%;
+    }
+
+    header.head-home {
+        height: 500px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+      header.header-home {
+        height: 475px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+
+    .footer {
+        font-size: 0.7rem;
+    }
+
+    .footerlinks .insta {
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 0.7rem;
+        margin-left: 2%;
+    }
+
+    .footerlink {
+        display: block;
+        margin: 15px 0;
+    }
+
+    .head-home {
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+

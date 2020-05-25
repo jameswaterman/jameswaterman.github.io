@@ -6,196 +6,6 @@ html {
 
 
 
-
-/*Banner*/
-
-.banner {
-    display: none;
-}
-
-.banner-left {
-    float: left;
-    width: 50%;
-    
-    color: black;
-}
-
-.banner div {
-    display: inline-block;
-    width: 50%;
-    padding: 10px 0 10px 0;
-    background-color: rgba(248, 248, 248, 0.7);
-}
-
-.banner div a {
-    color: grey;
-    font-size: 18px;
-    font-family: "nunito sans", sans-serif;
-    font-weight: 400;
-    text-decoration: none;
-    transition: color 325ms;
-}
-
-.banner div a:hover {
-    color: #444;
-}
-
-.banner div a.current-banner-page {
-    color: black;
-    font-weight: 600;
-    background-color: #e9e9e9;
-}
-
-.banner div.current-banner-page {
-    background-color: #e9e9e9;
-}
-
-
-
-
-
-/*Header*/
-
-header {
-  margin-bottom: 20px;
-  height: 100px;
-}
-
-h1, h2, .link-position a, h3 {
-    font-family: "nunito sans", sans-serif;
-}
-
-div.name-top {
-    position: absolute;
-    top: 2%;
-    left: 1%;
-    text-align: left;
-}
-
-h1 {
-    font-weight: 800;
-    color: black;
-    font-size: 35px;
-    font-size: 1.75rem;
-    text-decoration: none;
-}
-
-h2 {
-    font-size: 17px;
-    font-size: 0.85rem;
-    font-weight: 400;
-    margin: 2% 0 0 10px;
-    color: black;
-}
-
-/*header navigation links*/
-
-div.link-position {
-    position: absolute;
-    right: 30px;
-    top: 45px;
-}
-
-.link-position a {
-    text-decoration: none;
-    color: grey;
-    font-size: 18px;
-    font-size: 0.9rem;
-    font-weight: 400;
-    text-decoration: none;
-    margin: 0 18px;
-    -webkit-transition: color 325ms;
-    transition: color 325ms;
-}
-
-.link-position a:hover {
-    color: #444;
-}
-
-a.current-page {
-    color: black; 
-    font-weight: 600;
-}
-
-/* Dropdown Menu */
-
-.dropdown {
-    position: relative;
-    display: none;
-    float: right;
-    margin: 1% 2%;
-    border-radius: 10px;
-}
-
-.hamburger:hover {
-    cursor: pointer;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    width: 20%;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    right: 0;
-    z-index: 5;
-}
-
-.dropdown span {
-    display: block;
-    width: 50px;
-    height: 5px;
-    background-color: black;
-    border: 1px solid black;
-    margin: 8px;
-    border-radius: 20px;
-    -webkit-transition: all 250ms;
-    transition: all 250ms;
-}
-
-.dropdown-content nav a {
-    display: block;
-    padding: 20px 0 20px 10px;
-    border-bottom: 1px solid #d3d3d3;
-    color: grey;
-    text-align: center;
-    text-decoration: none;
-}
-
-.dropdown-content nav a:hover {
-    color: #444;
-}
-
-.dropdown-background {
-    background-color: #f3f3f3;
-}
-
-.bar1 {
-    -webkit-transform: rotate(45deg) translate(11px, 11px);
-            transform: rotate(45deg) translate(11px, 11px);
-    -webkit-transition: all 250ms;
-    transition: all 250ms;
-}
-
-.bar2 {
-    background-color: transparent !important;
-    border: transparent !important;
-    -webkit-transition: all 150ms;
-    transition: all 150ms;
-}
-
-.bar3 {
-    -webkit-transform: rotate(-45deg) translate(9px, -9px);
-            transform: rotate(-45deg) translate(9px, -9px);
-    -webkit-transition: all 250ms;
-    transition: all 250ms;
-}
-
-
-
-
-
 /*General css*/
 
 .center {
@@ -341,64 +151,7 @@ a.current-page {
 
 
 
-
-
-/*Footer*/
-
-footer {
-    margin-top: 100px;
-    border-top: 1px solid #d3d3d3
-}
-
-.footerlinks a {
-    margin: 0 20px;
-    color: grey;
-    font-weight: 300;
-    -webkit-transition: color 325ms;
-    transition: color 325ms;
-}
-
-.footerlinks {
-    padding: 20px;
-    font-size: 16px;
-    font-size: 0.8rem;
-}
-
-.footerlinks a:hover {
-    color: #222;
-}
-
-footer p {
-    font-size: 16px;
-    padding: 0;
-    text-align: center;
-}
-
-
-
-
 /* Media Queries */
-
-@media only screen and (max-width: 1024px) {
-    .link-position {
-        display: none;
-    }
-
-    .dropdown {
-        display: block;
-    }
-
-    .banner {
-        display: block;
-    }
-
-    div.name-top {
-        position: relative;
-        float: left;
-        top: 0.4rem;
-        left: 1%;
-    }
-}
 
 @media only screen and (max-width: 800px) {
 
@@ -414,20 +167,8 @@ footer p {
         padding-top: 20px;
     }
 
-    footer {
-        font-size: 0.7rem;
-    }
-
-    .insta-logo {
-        width: 22px;
-    }
-
     .album-photo-container img {
         max-width: 100%;
-    }
-
-    .footerlinks .insta {
-        display: none;
     }
 }
 
@@ -445,30 +186,10 @@ footer p {
 
 @media only screen and (max-width: 480px) {
 
-    h1 {
-        font-size: 1rem;
-    }
-
-    h2 {
-        font-size: 0.7rem;
-        margin-left: 2%;
-    }
-
     p {
         font-size: 0.8rem;
     }
-
-
-    .footerlinks a {
-        display: block;
-        margin: 15px 0;
-    }
-
-    .insta-logo {
-        width: 20px;
-    }
 }
-
 
 
 
