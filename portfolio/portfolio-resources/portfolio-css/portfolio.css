@@ -24,7 +24,7 @@ html {
     display: inline-block;
     width: 50%;
     padding: 10px 0 10px 0;
-    background-color: rgb(248, 248, 248, 0.7);
+    background-color: rgba(248, 248, 248, 0.7);
 }
 
 .banner div a {
@@ -203,7 +203,7 @@ a.current-page {
     margin: 0 auto; 
 }
 
-h3 {
+.page-title {
     text-align: left;
     font-family: 'Martel', serif;
     font-size: 46px;
@@ -255,54 +255,53 @@ h3 {
             align-items: center;
 }
 
+.album-link-title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    /*font-family: "nuito sans", sans-serif;*/
+    font-family: 'Martel', serif;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding: 4%;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: rgba(15, 15, 15, 0.2);
+}
+
 .album-tile {
     width: 30%;
-    margin: 0 7px 10px 7px;
+    margin: 0 4px 8px 4px;
     -webkit-box-flex: 1;
         -ms-flex-positive: 1;
             flex-grow: 1;
     min-width: 250px;
     max-width: 100%;
-}
-
-.album-tile:hover .overlay {
-    width: 100%;
-    cursor: pointer;
-}
-
-img {
-    width: 100%;
-    z-index: 3;
-}
-
-.album-title-container {
     position: relative;
-    width: 100%;
-}
-
-h4 {
-    position: absolute;
-    z-index: 3;
-    left: 15px;
-    bottom: 15px;
-    font-family: 'Martel', serif;
-    color: white;
-    font-size: 30px;
-    font-size: 1.5rem;
+    z-index: 1;
 }
 
 .overlay {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgb(115, 115, 115, 0.7);
-  overflow: hidden;
-  width: 0;
-  height: 100%;
-  -webkit-transition: 0.8s ease;
-  transition: 0.8s ease;
+    background-color: rgba(15, 15, 15, 0);
+    z-index: 2;
+    box-sizing: border-box;
+    transition: background-color 600ms ease;
 }
+
+.album-link-img {
+    width: 100%;
+    z-index: -1;
+    position: relative;
+    display: block;
+}
+
+.album-tile:hover .overlay  {
+    background-color: rgba(15, 15, 15, 0.6);
+}
+
 
 .album-photo-container {
     display: -webkit-box;
@@ -436,6 +435,11 @@ footer p {
 
     p {
         font-size: 0.85rem;
+    }
+
+    .overlay1 {
+    background-color: rgba(15, 15, 15, 0.4);
+    
     }
 }
 
