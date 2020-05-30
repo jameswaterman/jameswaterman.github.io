@@ -32,22 +32,36 @@ a {
 
 /*Body of the home page*/
 
-#blog_entries {
-    max-width: 825px;
+
+
+.main-body {
+    background-color: white;
+    z-index:2;
+    position: relative;
+    padding-top: 20px;
+    width: 100%;
 }
 
-p.intro {
-    width: 90%;
-    padding: 2%;
-    margin-bottom: 4%;
+.body-width-container {
+    width: 100%;
+    max-width: 950px;
+}
+
+.intro {
+    width: 97%;
+    padding: 2% 0 2% 0;
+    margin-bottom: 2.2%;
     border-top: 2px solid #d3d3d3;
-    border-bottom: 2px solid #d3d3d3;   
+    border-bottom: 2px solid #d3d3d3;  
+}
+
+.blog-entries {
+    width: 95%;
 }
 
 .entry {
     padding: 0.25rem 0;
-    width: 95%;
-    max-width: 825px;
+    width: 100%;
     position: relative;
     display: inline-block;
 }
@@ -57,7 +71,7 @@ p.intro {
     border-radius: 0.1rem;
 }
 
- h4 {
+.blog-album-title {
     text-decoration: none;
     font-size: 2.5rem;
     color: black;
@@ -71,17 +85,16 @@ p.intro {
     color: black;
     z-index: 1;
     padding: 10px;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
     width: 50%;
     height: 107px;
     background-color: rgb(248, 248, 248, 0.7);
     border-radius: 0.1rem;
 }
 
-.entry img {
+.blog-link-img {
     max-width: 100%;
     height: auto;
     display: block;
@@ -89,12 +102,12 @@ p.intro {
     transition: -webkit-transform 500ms ease;
     transition: transform 500ms ease;
     transition: transform 500ms ease, -webkit-transform 500ms ease;
-    z-index: 0;
+    z-index: 0; 
 }
 
-.entry img:hover {
-    -webkit-transform: scale(1.15);
-            transform: scale(1.15);
+.entry:hover .blog-link-img {
+    -webkit-transform: scale(1.13);
+            transform: scale(1.13);
 }
 
 
@@ -115,18 +128,19 @@ p.intro {
     max-width: 720px;
     width: 95%;
     overflow: hidden;
+    margin-top: 30px;
 }
 
-h3 {
+.page-title {
     font-weight: 300;
     font-size: 2.5rem;
     text-transform: uppercase;
 }
 
-p {
+.para {
     width: 80%;
     padding: 30px 30px 0 30px;
-    font-size: 1rem;
+    font-size: clamp(0.8rem, 2vw, 1.1rem);
     line-height: 1.4;
 }
 
@@ -152,6 +166,7 @@ img.selfportrait {
     max-width: 850px;
     width: 95%;
     overflow: hidden; 
+    padding-top: 50px;
 }
 
 .contact-info img {
@@ -166,16 +181,13 @@ em {
 
 
 .email-size {
-    font-size: 1.15rem;
+    font-size: clamp(0.85rem, 2.1vw, 1.2rem);
 }
 
 em:hover {
     color: #444;
 }
 
-.contact-info {
-    padding-top: 50px;
-}
 
 /*Contact me Media Queries*/
 
@@ -184,13 +196,6 @@ em:hover {
     .contact-info {
         max-width: 95%;
     }
-}
-
-@media only screen and (max-width: 340px) {
-	
-	.email-size {
-		font-size: 1rem;
-	}
 }
 
 
@@ -204,39 +209,22 @@ em:hover {
     }
 }  
 
-@media only screen and (max-width: 1024px) {
-
-    .email-size {
-        font-size: 1rem;
-    }
-}
-
-@media only screen and (max-width: 900px) {
-
-    .entry {
-        max-width: 95%;
-    }
-}
 
 @media only screen and (max-width: 700px) {
 
-    .entry img:hover {
+    .entry:hover .blog-link-img {
         transform: none;
     }
 }
 
 @media only screen and (max-width: 600px) {
 
-    h4 {
+    .blog-album-title {
         font-size: 2rem;
     }
 
     .date {
         font-size: 0.7rem;
-    }
-
-    p {
-        font-size: 0.85rem;
     }
 }
 
@@ -252,18 +240,18 @@ em:hover {
         padding-top: 20px;
     }
 
-    p {
-        font-size: 0.8rem;
+    .blog-album-title {
+        width: 60%;
     }
 
-    h4 {
-        width: 60%;
+    .intro {
+        margin-bottom: 3.5%;
     }
 }
 
 @media only screen and (max-width: 380px) {
 
-    h4 {
+    .blog-album-title {
         width: 80%;
         padding: 0;
     }

@@ -1,8 +1,24 @@
+/*General css*/
+
+.title-font {
+    font-family: "nunito sans", sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+
+
+
 
 /*Banner*/
 
 .banner {
     display: none;
+    height: 4vh;
+    min-height: 30px;
 }
 
 .banner-left {
@@ -13,9 +29,11 @@
 }
 
 .banner-link-container {
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 50%;
-    padding: 10px 0 10px 0;
+    height: 100%;
     background-color: rgb(248, 248, 248, 0.7);
 }
 
@@ -45,23 +63,20 @@
 
 /*Header*/
 
+
+
+/* Normal Header*/
+
 .header {
   margin-bottom: 20px;
   height: 100px;
 }
 
-.header.head-home {
-    height: 780px;
-    background-image: url("../images/landing-photo3.jpg");
-    background-size: cover;
-    background-position: center;
-}
 
 .name-top {
-    position: absolute;
-    top: 2%;   
-    left: 1%;
     text-align: left;
+    margin: 0 4% 1% 4%;
+    text-decoration: none;
 }
 
 .main-title {
@@ -69,6 +84,7 @@
     color: black;
     font-size: 1.75rem;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 .main-sub-heading {
@@ -79,13 +95,121 @@
 }
 
 
+/* Header Home Page*/
+
+
+.header-home {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-overlay {
+/*    background-color: rgba(15, 15, 15, 0.4);*/
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15) calc(100% - 150px), rgba(0, 0, 0, 0.3) calc(100% - 60px), rgba(0, 0, 0, 0.3));
+    position: relative;
+    z-index: -1;
+    height: 100%;
+    width: 100vw;
+}
+
+.header-background {
+    height: 100vh;
+    min-height: 450px;
+    background-image: url("../images/landing-photo3.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0;
+    position: relative;
+    z-index: -1;
+}
+
+.parallax {
+    position: relative;
+    z-index: 0;
+}
+
+.header-quote-container {
+    color: white;
+    margin-bottom: 10%;
+    text-shadow: 1px 1px 10px rgba(35, 35, 35, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+.main-quote {
+   font-size: clamp(2rem, 6vw, 4.2rem);
+   font-weight: 600;
+   margin: 1% 0 1.6% 0;
+   white-space: nowrap;
+}
+
+.main-quote-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bullit-point {
+    height: max(14px, 1.3vw);
+    background-color: white;
+    width: max(14px, 1.3vw);
+    border-radius: 100%;
+    margin: 0 max(12px, 1.1vw) 0 max(12px, 1.1vw);
+    display: inline-block;
+}
+
+.small-bullit-point {
+    margin: max(5px, 1.2vw) max(3px, 0.9vw) max(5px, 1.2vw) max(3px, 0.9vw);
+}
+
+.main-quote-small-container {
+    display: none;
+}
+
+.main-quote-small {
+    font-size: clamp(2.5rem, 11vw, 5rem);
+}
+
+.sub-quote {
+    font-size: clamp(1rem, 2vw, 1.2rem);
+    width: 52%;
+    line-height: 1.25;
+    font-weight: 400;
+    border-top: 2px white solid;
+    border-bottom: 2px white solid;
+    border-radius: 2px;
+    padding: 1.5%;
+}
+
+.quote-name {
+    font-size: clamp(0.7rem, 1.4vw, 0.85rem);
+    font-style: italic;
+}
+
+
+
 
 /*header navigation links*/
 
-.link-position {
+
+
+.header-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    position: relative;
+    top: 0;
+    width: 100vw;
+    z-index: 4;
+}
+
+.header-links-home {
     position: absolute;
-    right: 30px;
-    top: 45px; 
 }
 
 .nav-link {
@@ -94,7 +218,7 @@
     font-size: 0.9rem;
     font-weight: 400;
     text-decoration: none;
-    margin: 0 18px;
+    margin: 0 16px;
     transition: color 325ms;
 }
 
@@ -182,11 +306,6 @@
     transition: all 250ms;
 }
 
-/*General css*/
-
-.title-font {
-    font-family: "nunito sans", sans-serif;
-}
 
 /*Footer*/
 
@@ -204,7 +323,7 @@
 }
 
 .footerlinks {
-    padding: 30px;
+    padding: 35px;
     font-size: 0.8rem;
 }
 
@@ -223,12 +342,6 @@
 
 /* Media Queries */
 
-@media only screen and (max-width: 1400px) {
-
-    header.head-home {
-        height: 700px;
-    }
-}
 
 @media only screen and (max-width: 1024px) {
 
@@ -244,22 +357,20 @@
         display: block;
     }
 
-    div.name-top {
-        position: relative;
-        float: left;
-        top: 0.4rem;
-        left: 1%;
+    .header-background {
+        height: 96vh;
     }
 
-    header.head-home {
-        height: 500px;
+    .header-links {
+        align-items: flex-start;
     }
-}
 
-@media only screen and (max-width: 900px) {
+    .name-top {
+        margin-top: 5px;
+    }
 
-      header.header-home {
-        height: 475px;
+    .sub-quote {
+        width: 65%;
     }
 }
 
@@ -275,13 +386,29 @@
 }
 
 
+@media only screen and (max-width: 520px) {
+
+    .main-quote-container {
+        display: none;
+    }
+
+    .main-quote-small-container {
+        display: block;
+    }
+
+    .sub-quote {
+        display: none;
+    }
+}
+
+
 @media only screen and (max-width: 480px) {
 
-    h1 {
+    .main-title {
         font-size: 1rem;
     }
 
-    h2 {
+    .main-sub-heading {
         font-size: 0.7rem;
         margin-left: 2%;
     }
@@ -291,12 +418,19 @@
         margin: 15px 0;
     }
 
-    .head-home {
-        margin-bottom: 15px;
+    .header-background {
+        background-image: url("../images/landing-photo-mobile.jpg");
     }
 }
 
+/* Height Media Queries */
 
+@media only screen and (max-height: 480px) {
+
+    .header-quote-container {
+        margin-bottom: 3%;
+    }
+}
 
 
 

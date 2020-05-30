@@ -6,7 +6,6 @@ html {
 
 
 
-
 /*General css*/
 
 .center {
@@ -46,9 +45,10 @@ html {
     max-width: 675px;
     width: 95%;
     overflow: hidden;
+    margin-top: 30px;
 }
 
-.body img {
+.blog-img {
     max-width: 100%;
     height: auto; 
 }  
@@ -67,14 +67,14 @@ html {
    width: 100%;
 }
 
-h3 {
+.article-title {
     font-weight: 300;
     font-size: 2.5rem;
     text-transform: uppercase;
 }
 
 
-p.date {
+.date {
     text-align: left;
     padding: 0;
     font-size: 0.8rem;
@@ -84,16 +84,18 @@ p.date {
 
 }
 
-p {
+.blog-paragraph {
     padding: 30px 0;
     position: relative;
-    font-size: 0.95rem;
+    font-size: clamp(0.8rem, 3vw, 0.95rem);
     text-align: left;
     line-height: 1.4;
 }
 
 .images {
     margin: 8px 0; /*Changed from 10px*/
+    max-width: 100%;
+    height: auto; 
 }
 
 .back_to_top {
@@ -101,17 +103,11 @@ p {
     color: grey;
     font-size: 0.85;
     transition: color 325ms;
+    text-decoration: underline;
 }
 
 .back_to_top:hover {
     color: #444;
-}
-
-@media only screen and (max-width: 800px) {
-
-    .body {
-        max-width: 95%;
-    }
 }
 
 .insta-logo {
@@ -132,10 +128,17 @@ p {
 
 /* Media Queries */
 
+@media only screen and (max-width: 800px) {
+
+    .body {
+        max-width: 95%;
+    }
+}
+
 
 @media only screen and (max-width: 700px) {
 
-    h3 {
+    .article-title {
         margin-bottom: 40px;
         padding-top: 20px;
     }
@@ -147,16 +150,12 @@ p {
 
 @media only screen and (max-width: 600px) {
 
-    p {
-        font-size: 0.85rem;
+    .body {
+        margin-top: 20px;
     }
 }
 
 @media only screen and (max-width: 480px) {
-
-    p {
-        font-size: 0.8rem;
-    }
 
     .insta-logo {
         width: 20px;
@@ -165,6 +164,19 @@ p {
 
 
 
+@media only screen and (max-height: 850px) {
+    
+    .body {
+        max-width: 550px;
+    }
+}
+
+@media only screen and (max-height: 690px) {
+    
+    .body {
+        max-width: 450px;
+    }
+}
 
 
 

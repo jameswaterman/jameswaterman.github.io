@@ -41,6 +41,7 @@ html {
     -webkit-transition: color 325ms;
     transition: color 325ms;
     padding: 0 0 0 8px;
+    text-decoration: underline;
 }
 
 .album-page-heading a:hover {
@@ -142,6 +143,7 @@ html {
     font-size: 0.85;
     -webkit-transition: color 325ms;
     transition: color 325ms;
+    text-decoration: underline;
 }
 
 .back_to_top:hover {
@@ -181,6 +183,10 @@ html {
     .overlay1 {
     background-color: rgba(15, 15, 15, 0.4);
     
+    }
+
+    .album-link-title {
+        background-color: rgba(15, 15, 15, 0.5); 
     }
 }
 
