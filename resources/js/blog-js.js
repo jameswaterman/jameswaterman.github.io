@@ -81,14 +81,16 @@ window.addEventListener('scroll', throttle(parallaxEffect, 10000));
 
 const headerWidth = (e) => {
 	const header = document.querySelector('.header-background');
+	const body = document.querySelector('body');
 	if (!header) {
 		return;
 	};
 	const displayWidth = window.innerWidth;
-	header.style.width = displayWidth + "px";
+	body.style.width = displayWidth + "px";
 }
 
-window.addEventListener('resize', headerWidth);
+// window.addEventListener('resize', headerWidth);
+
 
 
 
