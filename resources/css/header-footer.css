@@ -17,7 +17,7 @@ a {
 
 .banner {
     display: none;
-    height: 4vh;
+    height: 4.5vh;
     min-height: 30px;
 }
 
@@ -203,7 +203,7 @@ a {
     height: 100px;
     position: relative;
     top: 0;
-    width: 100vw;
+    width: 100%;
     z-index: 4;
 }
 
@@ -357,7 +357,7 @@ a {
     }
 
     .header-background {
-        height: 96vh;
+        height: 95.5vh;
     }
 
     .header-links {

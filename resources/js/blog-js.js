@@ -77,7 +77,21 @@ window.addEventListener('scroll', throttle(parallaxEffect, 10000));
 
 
 
+// Header width function 
 
+const headerWidth = (e) => {
+
+	const header = document.querySelector('.header-background');
+	if (!header) {
+		return;
+	};
+	
+	const displayWidth = window.innerWidth;
+	console.log(displayWidth);
+	header.style.width = displayWidth;
+}
+
+window.addEventListener('resize', headerWidth);
 
 
 
