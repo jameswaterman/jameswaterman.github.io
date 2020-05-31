@@ -433,6 +433,12 @@ a {
 }
 
 
+@media only screen and (max-height: 750px) {
+    .header-quote-container {
+        margin-bottom: 4%;
+    }
+}
+
 
 
 

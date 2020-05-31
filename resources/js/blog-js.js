@@ -81,7 +81,7 @@ window.addEventListener('scroll', throttle(parallaxEffect, 10000));
 
 const headerWidth = (e) => {
 	const header = document.querySelector('.header-background');
-	const body = document.querySelector('body');
+	const body = document.body;
 	if (!header) {
 		return;
 	};
