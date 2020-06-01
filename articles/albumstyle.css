@@ -2,6 +2,7 @@ html {
     text-align: center;
     font-family: "roboto", arial;
     font-size: 20px;
+    scroll-behavior: smooth;
 }
 
 
