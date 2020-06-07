@@ -1,19 +1,28 @@
+/*=====================
+Contents
+
+1) General
+
+2) Home Page
+
+3) About Me
+
+4) Contact Me
+
+5) Media Queries
+=====================*/
+
+
+
+/*=====================
+    1) General css
+=====================*/
+
 html {
     text-align: center;
     font-family: "roboto", arial;
     font-size: 20px;
 }
-
-@media only screen and (max-width: 300px) {
-
-	html {
-		font-size: 16px;
-	}
-}
-
-
-
-/*General css*/
 
 .center {
     display: block;
@@ -30,7 +39,9 @@ a {
 }
 
 
-/*Body of the home page*/
+/*=======================
+2) Body of the home page
+=======================*/
 
 
 
@@ -122,7 +133,9 @@ a {
 
 
 
-/*About me page*/
+/*=====================
+  3) About me page
+=====================*/
 
 .about-container {
     max-width: 720px;
@@ -160,7 +173,9 @@ img.selfportrait {
 
 
 
-/*Contact me page*/
+/*=====================
+4) Contact me page
+=====================*/
 
 .contact-info {
     max-width: 850px;
@@ -189,18 +204,12 @@ em:hover {
 }
 
 
-/*Contact me Media Queries*/
-
-@media only screen and (max-width: 900px) {
-
-    .contact-info {
-        max-width: 95%;
-    }
-}
 
 
 
- /* Media Queries */
+/*=====================
+  5) Media Queries 
+=====================*/
 
 @media only screen and (max-width: 2880px) {
 
@@ -208,6 +217,13 @@ em:hover {
         max-width: 2880px;
     }
 }  
+
+@media only screen and (max-width: 900px) {
+
+    .contact-info {
+        max-width: 95%;
+    }
+}
 
 
 @media only screen and (max-width: 700px) {
@@ -254,6 +270,13 @@ em:hover {
     .blog-album-title {
         width: 80%;
         padding: 0;
+    }
+}
+
+@media only screen and (max-width: 300px) {
+
+    html {
+        font-size: 16px;
     }
 }
 

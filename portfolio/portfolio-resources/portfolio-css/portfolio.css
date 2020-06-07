@@ -1,3 +1,21 @@
+/*====================
+Contents
+
+1) General css
+
+2) Portfolio styles
+
+3) Album Styles
+
+4) Media Queries
+====================*/
+
+
+
+/*=====================
+   1) General css
+=====================*/
+
 html {
     text-align: center;
     font-family: "roboto", arial;
@@ -5,14 +23,14 @@ html {
     scroll-behavior: smooth;
 }
 
-
-
-/*General css*/
-
 .center {
     display: block;
     margin: 0 auto; 
 }
+
+/*=====================
+  2) portfolio styles
+=====================*/
 
 .page-title {
     text-align: left;
@@ -50,7 +68,18 @@ html {
     color: #444;
 }
 
-.body {
+.body-main {
+    width: 100%;
+    background-color: white;
+    z-index:2;
+    position: relative;
+}
+
+.body-album {
+    width: 90%;
+}
+
+.portfolio-body-content-container {
     width: 90%;
 }
 
@@ -66,6 +95,7 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 0 0.5%;
 }
 
 .album-link-title {
@@ -118,6 +148,10 @@ html {
     background-color: rgba(15, 15, 15, 0.6);
 }
 
+/*====================
+   3) Album styles
+====================*/
+
 
 .album-photo-container {
     display: -webkit-box;
@@ -160,7 +194,9 @@ html {
 
 
 
-/* Media Queries */
+/*====================
+  4) Media Queries 
+====================*/
 
 @media only screen and (max-width: 800px) {
 
