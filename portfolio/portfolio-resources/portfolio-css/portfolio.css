@@ -16,6 +16,11 @@ Contents
    1) General css
 =====================*/
 
+:root {
+    --main-blue: #1895dc;
+    --main-grey: #d3d3d3;
+}
+
 html {
     text-align: center;
     font-family: "roboto", arial;
@@ -28,20 +33,69 @@ html {
     margin: 0 auto; 
 }
 
+
 /*=====================
   2) portfolio styles
 =====================*/
 
+.portfolio-headings{
+    text-align: center;
+    margin-top: max(30px, 3%);
+    margin-bottom: max(30px, 3%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 98%;
+    max-width: 906px;
+    border-top: 3px solid var(--main-blue);
+    border-bottom: 3px solid var(--main-blue);
+    border-right: 3px solid var(--main-blue);
+    border-radius: 4px;
+    flex-grow: 1;
+}
+
+
+.portfolio-headings .page-title {
+    padding: max(15px, 1.5%);
+    margin-bottom: 0;
+    font-size: clamp(0.75rem, 4.5vw, 2.3rem);
+    border: none;
+    width: 50%;
+    background-color: white;
+    text-align: center;
+    border-left: 3px solid var(--main-blue);
+    cursor: pointer;
+    transition: background-color 250ms;
+    white-space: nowrap; 
+    transition: background-color 200ms, color 200ms;
+}
+
+.portfolio-headings .page-title:hover {
+    background-color: rgba(24, 149, 220, 0.3);
+}
+
+.portfolio-headings .page-title:focus {
+   outline: none;
+}
+
+.page-title.current {
+    background-color: var(--main-blue);
+    color: white;
+}
+
+.page-title.current:hover {
+    background-color: var(--main-blue);
+}
+
 .page-title {
     text-align: left;
-    font-family: 'Martel', serif;
     font-size: 46px;
     font-size: 46px;
     font-size: 2.3rem;
-    padding: 3% 0 1% 0;
-    border-bottom: 2px solid #d3d3d3;
+    padding: max(20px, 3%) 0 1% 0;
+    border-bottom: 2px solid var(--main-grey);
     font-weight: 400;
-    margin: 0 0 20px 0;
+    margin-bottom: max(30px, 2%);
 }
 
 .album-page-heading h3 {
@@ -51,7 +105,7 @@ html {
 .album-page-heading {
     text-align: left;
     width: 100%;
-    border-bottom: 2px solid #d3d3d3;
+    border-bottom: 2px solid var(--main-grey);
     padding: 0 0 30px 0;
     margin-bottom: 20px;
 }
@@ -80,10 +134,21 @@ html {
 }
 
 .portfolio-body-content-container {
-    width: 90%;
+    width: 98%;
+    padding-top: 0.5%;
 }
 
-.portfolio-album-body {
+.slide-container {
+    padding: 1.5%;
+    background-color: white;
+    display: block;
+}
+
+.portfolio-web-body {
+    display: none;
+}
+
+.portfolio-photo-body {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -95,8 +160,112 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0 0.5%;
 }
+
+.web-text {
+    text-align: left;
+    font-size: clamp(0.8rem, 3vw, 1.1rem);
+    line-height: 1.4;
+}
+
+.web-text a {
+    text-decoration: underline;
+    color: var(--main-blue);
+    transition: color 250ms;
+}
+
+.web-text a:hover {
+    color: #0F63F2;
+}
+
+.logo-container {
+    display: flex;
+    width: min(100%, 1150px);
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1%;
+    margin-bottom: max(30px, 4%);
+}
+
+.logo {
+    width: clamp(30px, 10%, 100px);
+    height: auto;
+}
+
+.logo-small {
+    width: clamp(25px, 6%, 90px);
+}
+
+.text-github {
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.github-logo {
+    width: clamp(70px, 50%, 90px);
+    border-radius: 100%;
+    transition: background-color 350ms;
+    margin-top: 30px;
+}
+
+.github-logo:hover {
+    background-color: var(--main-blue);
+}
+
+.web-dev-width {
+    width: min(98%, 1068px);
+}
+
+.web-body-title {
+    margin-top: max(30px, 2.5%);
+    width: min(100%, 1150px);
+    border-bottom-color: var(--main-blue);
+}
+
+.project-title {
+    font-size: clamp(1.3rem, 8vw, 1.8rem);
+    text-align: left;
+    text-decoration: underline;
+    padding-bottom: max(2%, 10px);
+    font-weight: 600;
+    text-decoration: underline;
+    line-height: 1.2;
+    color: #060F61;
+}
+
+.project-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: max(6%, 70px);
+}
+
+.project-img {
+    width: 40%;
+    padding-bottom: max(2%, 8px);
+}
+
+.project-text {
+    width: 60%;
+    font-size: clamp(0.9rem, 3vw, 1.1rem);
+    padding-right: 1%;
+}
+
+.divider {
+    width: min(800px, 96%);
+    height: 6px;
+    background-color: var(--main-blue);
+    border-radius: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+
+
+/*====================
+   3) Album styles
+====================*/
 
 .album-link-title {
     position: absolute;
@@ -106,7 +275,6 @@ html {
             transform: translate(-50%, -50%);
     z-index: 10;
     /*font-family: "nuito sans", sans-serif;*/
-    font-family: 'Martel', serif;
     color: white;
     font-size: 30px;
     font-size: 1.5rem;
@@ -114,7 +282,7 @@ html {
     padding: 4%;
     border: 1px solid white;
     border-radius: 5px;
-    background-color: rgba(15, 15, 15, 0.2);
+    background-color: rgba(15, 15, 15, 0.5);
 }
 
 .album-tile {
@@ -127,6 +295,7 @@ html {
     max-width: 100%;
     position: relative;
     z-index: 1;
+    box-sizing: border-box;
 }
 
 .overlay {
@@ -147,11 +316,6 @@ html {
 .album-tile:hover .overlay  {
     background-color: rgba(15, 15, 15, 0.6);
 }
-
-/*====================
-   3) Album styles
-====================*/
-
 
 .album-photo-container {
     display: -webkit-box;
@@ -194,9 +358,27 @@ html {
 
 
 
+
+
 /*====================
   4) Media Queries 
 ====================*/
+
+@media only screen and (max-width: 960px) {
+    .project-container{
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .project-img {
+        width: min(98%, 500px);
+        padding: max(1%, 10px) 0; 
+    }
+
+    .project-text {
+        width: 98%;
+    }
+}
 
 @media only screen and (max-width: 800px) {
 
@@ -212,19 +394,7 @@ html {
     }
 }
 
-@media only screen and (max-width: 700px) {
-
-    h3 {
-        margin-bottom: 40px;
-        padding-top: 20px;
-    }
-}
-
 @media only screen and (max-width: 600px) {
-
-    p {
-        font-size: 0.85rem;
-    }
 
     .overlay1 {
     background-color: rgba(15, 15, 15, 0.4);
@@ -253,13 +423,6 @@ html {
     }
 }
 
-
-@media only screen and (max-width: 480px) {
-
-    p {
-        font-size: 0.8rem;
-    }
-}
 
 
 

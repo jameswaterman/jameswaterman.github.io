@@ -23,6 +23,11 @@ CONTENTS
    1)  General css
 =====================*/
 
+:root {
+    
+}
+
+
 .title-font {
     font-family: "nunito sans", sans-serif;
 }
@@ -249,8 +254,8 @@ a {
     text-align: left;
     width: 38%;
     max-width: 500px;
-    min-width: 250px;
-    height: 325px;
+    /*min-width: 250px;*/
+    height: 250px;
     display: flex;
     flex-direction: column;
     margin: 3%;
@@ -569,8 +574,19 @@ a {
     }
 
     .skill-container {
-        height: 150px;
-        padding-bottom: 1.5vh;
+        padding-bottom: 2vh;
+    }
+}
+@media (orientation: landscape) and (max-width: 670px) {
+
+    .portfolio-block-container {
+        flex-direction: row;
+    }
+
+    .skill-container {
+        height: 30%;
+        padding-bottom: 15%;
+        width: 80%;
     }
 }
 

@@ -79,17 +79,55 @@ window.addEventListener('scroll', throttle(parallaxEffect, 10000));
 
 // Header width function 
 
-const headerWidth = (e) => {
-	const header = document.querySelector('.header-background');
-	const body = document.body;
-	if (!header) {
-		return;
-	};
-	const displayWidth = window.innerWidth;
-	body.style.width = displayWidth + "px";
-}
+// const headerWidth = (e) => {
+// 	const header = document.querySelector('.header-background');
+// 	const body = document.body;
+// 	if (!header) {
+// 		return;
+// 	};
+// 	const displayWidth = window.innerWidth;
+// 	body.style.width = displayWidth + "px";
+// }
 
 // window.addEventListener('resize', headerWidth);
+
+// portfolio toggle 
+
+const portfolioToggle = {
+	btnLeft: document.querySelector('.photo-title'),
+
+    btnRight: document.querySelector('.web-title'),
+
+    photoBody: document.querySelector('.portfolio-photo-body'),
+
+    webBody: document.querySelector('.portfolio-web-body'),
+
+	showRight: (e) => {
+        if (portfolioToggle.btnLeft.classList.contains('current')) {
+
+        	portfolioToggle.btnLeft.classList.remove('current');
+        	portfolioToggle.btnRight.classList.add('current');
+
+        	portfolioToggle.webBody.style.display = 'block';
+        	portfolioToggle.photoBody.style.display = 'none';
+        };
+	},
+
+	showLeft: (e) => {
+		if (portfolioToggle.btnRight.classList.contains('current')) {
+
+        	portfolioToggle.btnRight.classList.remove('current');
+        	portfolioToggle.btnLeft.classList.add('current');
+
+        	portfolioToggle.webBody.style.display = 'none';
+        	portfolioToggle.photoBody.style.display = 'flex';
+        };
+	}
+};
+
+portfolioToggle.btnLeft.addEventListener('click', portfolioToggle.showLeft);
+portfolioToggle.btnRight.addEventListener('click', portfolioToggle.showRight);
+
 
 
 
