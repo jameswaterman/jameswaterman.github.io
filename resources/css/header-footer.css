@@ -148,8 +148,7 @@ a {
 }
 
 .header-background {
-    height: 100vh;
-    min-height: 450px;
+    height: max(550px, 100vh);
     background-image: url("../images/landing-photo3.jpg");
     background-size: cover;
     background-position: center;
