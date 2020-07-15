@@ -264,6 +264,7 @@ a {
     font-size: clamp(1.5rem, 4vw, 2.95rem);
     font-family: "nunito sans", sans-serif;
     margin: 1% 1% 6% 0;
+    color: white;
 }
 
 .skill-text {
@@ -468,7 +469,7 @@ a {
     }
 
     .header-background {
-        height: 95vh;
+        height: max(95vh, 500px);
     }
 
     .header-links {

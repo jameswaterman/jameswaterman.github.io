@@ -74,12 +74,16 @@
                     <div class="header-quote-container header-quote-container-portfolio">
                         <div class="portfolio-block-container">
                             <div class="skill-container">
-                                <h3 class="skill-title">Photography</h3>
-                                <p class="skill-text">My interests in photography stemmed from my love of extreme sports. I grew to love all aspects of photography, with a passion for shooting sport and portrait/lifestyle.</p>
+                                <a href="#body">
+                                    <h3 class="skill-title web-head-title">Web Development</h3>
+                                </a>
+                                <p class="skill-text">Having started my coding journey in 2018, I now focus primarily on front-end technologies; with a continual goal of becoming a full-stack developer. </p>
                             </div>
                             <div class="skill-container">
-                                <h3 class="skill-title">Web Development</h3>
-                                <p class="skill-text">Having started my coding journey in 2018, I now focus primarily on front-end technologies; with a continual goal of becoming a full-stack developer. </p>
+                                <a href="#body">
+                                    <h3 class="skill-title photo-head-title">Photography</h3>
+                                </a>
+                                <p class="skill-text">My interests in photography stemmed from my love of extreme sports. I grew to love all aspects of photography, with a passion for shooting sport and portrait/lifestyle.</p>
                             </div>
                         </div>
                     </div>
@@ -91,11 +95,11 @@
 
     <!-- Body of Portfolio -->
 
-    <div class="body-main center">
+    <div id="body" class="body-main center">
         <div class=" center portfolio-body-content-container">
             <div class="portfolio-headings center">
-                <button class="current page-title title-font photo-title">Photography</button> 
-                <button class="page-title title-font web-title">Web Development</button>
+                <button class="current page-title title-font web-title">Web Development</button>
+                <button class="page-title title-font photo-title">Photography</button> 
             </div>
             <div class="portfolio-photo-body slide-container">
 
@@ -154,6 +158,10 @@
                     <img src="./portfolio/portfolio-resources/portfolio-images/express.png" class="logo" alt="express logo">  
                     <img src="./portfolio/portfolio-resources/portfolio-images/sql.png" class="logo logo-small" alt="sql logo">
                 </div>
+                
+                <a href="./portfolio/portfolio-resources/jameswaterman-cv.pdf" class="title-font cv-button center" target="_blank">CV</a>
+
+
 
 
                 <p class="web-text web-dev-width center">In 2018 I had just finished college and found myself rather lost with what to do next. Whilst away travelling I decided I wanted a website where I could share my photography. With a website being the goal I decided I would learn to make one myself as time is something I had plenty of.<br><br>
@@ -169,7 +177,18 @@
                     <div class="project-container">
                         <div class="project-text">
                             <h4 class="project-title title-font center">Ingredients Calculator</h4>
-                            <p class="web-text"><a href="http://ingredientscalculator.surge.sh/" target="_blank">Ingredients Calculator</a> is a web app I created that allows you to take the ingredients from a recipe and then increase/decrease them based on how many people you're cooking for. I produced the app using JavaScript and CSS with the React framework to produce a fast and lightweight app that doesn't require the use of a server or database. <a href="https://github.com/jameswaterman/ingredients-calculator" target="_blank">GitHub</a></p>
+
+                            <p class="web-text"><a href="http://ingredientscalculator.surge.sh/" target="_blank">Ingredients Calculator</a> is a web app I created that allows you to take the ingredients from a recipe and then increase/decrease them based on how many people you're cooking for. I produced the app using JavaScript and CSS with the React framework to produce a fast and lightweight app that doesn't require the use of a server or database.</p>
+
+                            <p class="web-text web-text-link show-list">Future features<img class="dropdown-arrow" src="./resources/images/dropdown.png"></p>
+
+                            <ul class="feature-list web-text list">
+                                <li>Be able to create an account with authorisation.</li>
+                                <li>Store your recipies in an SQL database using an express server.</li>
+                                <li>Search for other peoples recipies and save them to your colection.</li>
+                            </ul>
+
+                            <p class="web-text"><a href="https://github.com/jameswaterman/ingredients-calculator" target="_blank">GitHub</a></p>
                         </div>
                         <img src="./portfolio/portfolio-resources/portfolio-images/ingredients-calculator.png" alt="Ingredients Calculator" class="project-img">
                     </div>
@@ -177,7 +196,18 @@
                     <div class="project-container bg-color">
                         <div class="project-text">
                             <h4 class="project-title title-font center">Jamming</h4>
-                            <p class="web-text"><a href="http://jammingplaylistcreator.surge.sh/" target="_blank">Jamming</a> is a web app I built that interacts with the Spotify API, allowing you to create and save new playlists to your Spotify account. I built this web app with the react framework, along with CSS. <a href="https://github.com/jameswaterman/Jamming" target="_blank">GitHub</a></p>
+
+                            <p class="web-text"><a href="http://jammingplaylistcreator.surge.sh/" target="_blank">Jamming</a> is a web app I built that interacts with the Spotify API, allowing you to create and save new playlists to your Spotify account. I built this web app with the react framework, along with CSS.</p>
+
+                            <p class="web-text web-text-link show-list">Future features<img class="dropdown-arrow" src="./resources/images/dropdown.png"></p>
+
+                            <ul class="feature-list web-text list">
+                                <li>Be able to retrieve and edit existing playlists.</li>
+                                <li>Add a filter to the playlists so you can order the songs in your playlist alphabetically or by artist.</li>
+                                <li>Only display songs not currently present in the playlist in the search results</li>
+                            </ul>
+
+                            <p class="web-text"><a href="https://github.com/jameswaterman/Jamming" target="_blank">GitHub</a></p>
                         </div>
                         <img src="./portfolio/portfolio-resources/portfolio-images/jamming.png" alt="Business website template" class="project-img">
                     </div>
@@ -194,7 +224,18 @@
                     <div class="project-container bg-color">
                         <div class="project-text">
                             <h4 class="project-title title-font center">Ravenous</h4>
-                            <p class="web-text"><a href="http://ravenousreviews.surge.sh/" target="_blank">Ravenous</a> is a web app I built which interacts with the Yelp API to provide you with quick reviews of restaurants in a given area. Ravenous allows you to sort your search results based on best match, highest rating or most reviews. I built this app using React alongside CSS. <a href="https://github.com/jameswaterman/ravenous" target="_blank">GitHub</a></p>
+
+                            <p class="web-text"><a href="http://ravenousreviews.surge.sh/" target="_blank">Ravenous</a> is a web app I built which interacts with the Yelp API to provide you with quick reviews of restaurants in a given area. Ravenous allows you to sort your search results based on best match, highest rating or most reviews. I built this app using React alongside CSS.</p>
+
+                            <p class="web-text web-text-link show-list">Future features<img class="dropdown-arrow" src="./resources/images/dropdown.png"></p>
+
+                            <ul class="feature-list web-text list">
+                                <li>Add opening hours and if the business is currently open.</li>
+                                <li>Link to the businesses website and provide contact information i.e. phone.</li>
+                                <li>If no image is supplied by the  business, use a standard image rather than a black square.</li>
+                            </ul>
+
+                            <p class="web-text"><a href="https://github.com/jameswaterman/ravenous" target="_blank">GitHub</a></p>
                         </div>
                         <img src="./portfolio/portfolio-resources/portfolio-images/ravenous.png" alt="Business website template" class="project-img">
                     </div>

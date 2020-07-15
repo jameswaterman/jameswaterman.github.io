@@ -1,4 +1,4 @@
-// Dropdown menu
+
 
 $(document).ready(function() {
 	$('.dropdown').click(function() {
@@ -94,9 +94,13 @@ window.addEventListener('scroll', throttle(parallaxEffect, 10000));
 // portfolio toggle 
 
 const portfolioToggle = {
-	btnLeft: document.querySelector('.photo-title'),
+	btnLeft: document.querySelector('.web-title'),
 
-    btnRight: document.querySelector('.web-title'),
+    btnRight: document.querySelector('.photo-title'),
+
+    webHeadLink: document.querySelector('.web-head-title'),
+
+    photoHeadLink: document.querySelector('.photo-head-title'),
 
     photoBody: document.querySelector('.portfolio-photo-body'),
 
@@ -108,8 +112,8 @@ const portfolioToggle = {
         	portfolioToggle.btnLeft.classList.remove('current');
         	portfolioToggle.btnRight.classList.add('current');
 
-        	portfolioToggle.webBody.style.display = 'block';
-        	portfolioToggle.photoBody.style.display = 'none';
+        	portfolioToggle.webBody.style.display = 'none';
+        	portfolioToggle.photoBody.style.display = 'flex';
         };
 	},
 
@@ -119,14 +123,36 @@ const portfolioToggle = {
         	portfolioToggle.btnRight.classList.remove('current');
         	portfolioToggle.btnLeft.classList.add('current');
 
-        	portfolioToggle.webBody.style.display = 'none';
-        	portfolioToggle.photoBody.style.display = 'flex';
+        	portfolioToggle.webBody.style.display = 'block';
+        	portfolioToggle.photoBody.style.display = 'none';
         };
 	}
 };
 
 portfolioToggle.btnLeft.addEventListener('click', portfolioToggle.showLeft);
 portfolioToggle.btnRight.addEventListener('click', portfolioToggle.showRight);
+
+portfolioToggle.webHeadLink.addEventListener('click', portfolioToggle.showLeft);
+portfolioToggle.photoHeadLink.addEventListener('click', portfolioToggle.showRight);
+
+
+// Toggle feature list portfolio
+
+let readMoreBtns = document.querySelectorAll(".show-list");
+
+readMoreBtns.forEach(() => {
+  this.addEventListener( 'click' , changeClass);
+})
+
+function changeClass(event) {
+  let btn = event.target,
+      context = event.target.parentNode.parentNode,
+      toggleList = context.querySelector(".list"),
+      toggleArrow = context.querySelector('.dropdown-arrow');
+    
+    $(toggleArrow).toggleClass('rotate-arrow');
+    $(toggleList).slideToggle(300);
+}
 
 
 
