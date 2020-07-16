@@ -145,13 +145,16 @@ readMoreBtns.forEach(() => {
 })
 
 function changeClass(event) {
-  let btn = event.target,
-      context = event.target.parentNode.parentNode,
-      toggleList = context.querySelector(".list"),
-      toggleArrow = context.querySelector('.dropdown-arrow');
-    
-    $(toggleArrow).toggleClass('rotate-arrow');
-    $(toggleList).slideToggle(300);
+
+    let btn = event.target,
+        context = event.target.parentNode.parentNode,
+        toggleList = context.querySelector(".list"),
+        toggleArrow = context.querySelector('.dropdown-arrow')
+
+	if (btn.classList.contains('show-list') || btn.classList.contains('dropdown-arrow')) {
+		$(toggleArrow).toggleClass('rotate-arrow');
+	    $(toggleList).slideToggle(300);
+	}
 }
 
 
