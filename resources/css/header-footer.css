@@ -531,6 +531,14 @@ a {
     }
 }
 
+@media only screen and (max-width: 500px) {
+
+    .footerlink {
+        display: block;
+        margin: 15px 0;
+    }
+}
+
 
 @media only screen and (max-width: 480px) {
 
@@ -541,11 +549,6 @@ a {
     .main-sub-heading {
         font-size: 0.7rem;
         margin-left: 2%;
-    }
-
-    .footerlink {
-        display: block;
-        margin: 15px 0;
     }
 
     .header-background {
