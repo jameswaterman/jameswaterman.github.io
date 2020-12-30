@@ -352,6 +352,12 @@ html {
     display: block;
 }
 
+.album-link-img::before {
+    content: '';
+    display: block;
+    padding-top: 80%;
+}
+
 .album-tile:hover .overlay  {
     background-color: rgba(15, 15, 15, 0.6);
 }
