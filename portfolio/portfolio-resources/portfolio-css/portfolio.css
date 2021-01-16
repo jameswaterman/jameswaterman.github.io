@@ -468,6 +468,12 @@ html {
     }
 }
 
+@media only screen and (max-width: 300px) {
+    .page-title span {
+        display: none;
+    }
+}
+
 
 
 

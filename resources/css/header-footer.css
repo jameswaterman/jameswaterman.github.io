@@ -537,6 +537,21 @@ a {
         display: block;
         margin: 15px 0;
     }
+
+    .skill-text {
+        display: none;
+    }
+
+    .skill-container {
+        padding: 3vh;
+        padding-bottom: 3vh;
+        text-align: center;
+        margin: 7% 3% 7% 3%;
+    }
+
+    .skill-title {
+        margin: 1% 1% 1% 1%;
+    }
 }
 
 
@@ -571,13 +586,14 @@ a {
 }
 
 
-@media only screen and (max-height: 750px) {
+@media only screen and (max-height: 750px) and (min-width: 500px) {
     .header-quote-container {
         margin-bottom: 4%;
     }
 
     .skill-container {
-        padding-bottom: 2vh;
+        padding-bottom: 3.5vh;
+        padding-top: 1vh;
     }
 }
 @media (orientation: landscape) and (max-width: 670px) {
@@ -588,7 +604,7 @@ a {
 
     .skill-container {
         height: 30%;
-        padding-bottom: 15%;
+        padding-bottom: 16%;
         width: 80%;
     }
 }
