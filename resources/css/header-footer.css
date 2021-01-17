@@ -107,11 +107,11 @@ a {
 
 .name-top {
     text-align: left;
-    margin: 0 4% 1% 4%;
+    margin: 0 4% 0.5% min(2%, 15px);
     text-decoration: none;
 }
 
-.main-title {
+.main-title a {
     font-weight: 800;
     color: black;
     font-size: 1.75rem;
@@ -119,11 +119,24 @@ a {
     white-space: nowrap;
 }
 
-.main-sub-heading {
+h2 {
+    margin: 2% 0 0 clamp(7px, 1vw, 10px);
+}
+
+.main-sub-heading,
+.main-sub-heading a {
     font-size: 0.85rem;
     font-weight: 400;
-    margin: 2% 0 0 10px;
     color: black;
+}
+
+
+.main-sub-heading a {
+    margin-left: 0px;
+}
+
+.mobile-sub-heading {
+    display: none;
 }
 
 
@@ -279,7 +292,7 @@ a {
 }
 
 .grey {
-    color: #dedede;
+    color: #dedede !important; 
 }
 
 .dropdown span.grey-background {
@@ -303,9 +316,11 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: flex-start;
+    flex-wrap: wrap;
     height: 100px;
     position: relative;
-    top: 0;
+    top: clamp(2px, 1.5vw, 30px);
     width: 100%;
     z-index: 4;
 }
@@ -351,6 +366,10 @@ a {
     cursor: pointer;
 }
 
+.hamburger {
+    height: 47px;
+}
+
 .dropdown-content {
     display: none;
     position: absolute;
@@ -364,8 +383,8 @@ a {
 
 .dropdown span {
     display: block;
-    width: 50px;
-    height: 5px;
+    width: clamp(40px, 8vw, 50px);
+    height: clamp(3px, 5vw, 5px);
     background-color: black;
     border: 1px solid black;
     margin: 8px;
@@ -464,16 +483,20 @@ a {
         display: block;
     }
 
-    .banner {
+    /*.banner {
+        display: block;
+    }*/
+
+    .mobile-sub-heading {
         display: block;
     }
 
-    .header-background {
-        height: max(95vh, 500px);
+    .web-sub-heading {
+        display: none;
     }
 
-    .header-links {
-        align-items: flex-start;
+    .header-background {
+        height: max(100vh, 500px);
     }
 
     .name-top {
@@ -557,13 +580,12 @@ a {
 
 @media only screen and (max-width: 480px) {
 
-    .main-title {
-        font-size: 1rem;
+    .main-title a {
+        font-size: clamp(1rem, 1.2rem, 1.4rem);
     }
 
-    .main-sub-heading {
+    .main-sub-heading a {
         font-size: 0.7rem;
-        margin-left: 2%;
     }
 
     .header-background {
@@ -575,6 +597,8 @@ a {
         background-position: left;
     }
 }
+
+
 
 /* Height Media Queries */
 
