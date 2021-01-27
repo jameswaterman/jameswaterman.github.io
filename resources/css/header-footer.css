@@ -410,6 +410,10 @@ h2 {
     background-color: #f3f3f3;
 }
 
+.dropdown-background-portfolio {
+    background-color: #303030;
+}
+
 .bar1 {
     -webkit-transform: rotate(45deg) translate(11px, 11px);
             transform: rotate(45deg) translate(11px, 11px);
