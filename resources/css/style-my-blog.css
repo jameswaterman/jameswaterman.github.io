@@ -192,6 +192,7 @@ img.selfportrait {
 em {
     color: black;
     text-decoration: underline;
+    transition: color 200ms;
 }
 
 
@@ -200,7 +201,7 @@ em {
 }
 
 em:hover {
-    color: #444;
+    color: #1895dc;
 }
 
 
