@@ -135,7 +135,13 @@ h2 {
     margin-left: 0px;
 }
 
+
+
 .mobile-sub-heading {
+    display: block;
+}
+
+.web-sub-heading {
     display: none;
 }
 
@@ -329,6 +335,11 @@ h2 {
     position: absolute;
 }
 
+.link-position {
+    display: flex;
+    align-items: center;
+}
+
 .nav-link {
     text-decoration: none;
     color: grey;
@@ -346,6 +357,10 @@ h2 {
 .nav-link.current-page {
     color: black; 
     font-weight: 600;
+}
+
+.nav-link img {
+    width: 0.9rem;
 }
 
 
@@ -490,14 +505,6 @@ h2 {
     /*.banner {
         display: block;
     }*/
-
-    .mobile-sub-heading {
-        display: block;
-    }
-
-    .web-sub-heading {
-        display: none;
-    }
 
     .header-background {
         height: max(100vh, 500px);
