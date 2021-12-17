@@ -1,4 +1,4 @@
-// dropdown menu
+// dropdown menu  ////////////////////////////////////////
 
 
 $(document).ready(function() {
@@ -15,7 +15,159 @@ $(document).ready(function() {
 	});
 });
 
-// show more/less toggle
+// Inserted html /////////////////////////////////////////////////
+
+  // footers
+
+const copyright = `<p class="center copyright">&copy; James Waterman, ` + new Date().getFullYear() + `</p>`
+
+const mainPageFooter = `
+        <div class="footerlinks">
+            <a href="index.html" class="footerlink">Home</a>
+            <a href="about-me.html" class="footerlink">About Me</a>
+            <a href="contact-me.html" class="footerlink">Contact Me</a>
+            <a href="portfolio.html" class="footerlink">Portfolio</a>
+            <a href="https://www.instagram.com/james_waterman6/" target="_blank" class="footerlink insta">Instagram</a>
+        </div>
+
+        ` + copyright;
+
+const articleFooter = `
+        <div class="footerlinks">
+            <a href="../../index.html" class="footerlink">Home</a>
+            <a href="../../about-me.html" class="footerlink">About Me</a>
+            <a href="../../contact-me.html" class="footerlink">Contact Me</a>
+            <a href="../../portfolio.html" class="footerlink">Portfolio</a>
+            <a href="https://www.instagram.com/james_waterman6/" target="_blank" class="footerlink insta">Instagram</a>
+        </div>
+
+        ` + copyright;
+        
+const portfolioPageFooter = `
+        <div class="footerlinks">
+            <a href="../index.html" class="footerlink">Home</a>
+            <a href="../about-me.html" class="footerlink">About Me</a>
+            <a href="../contact-me.html" class="footerlink">Contact Me</a>
+            <a href="../portfolio.html" class="footerlink">Portfolio</a>
+            <a href="https://www.instagram.com/james_waterman6/" target="_blank" class="footerlink insta">Instagram</a>
+        </div>
+
+        ` + copyright;
+
+const footer = document.getElementById("footer");
+const blogFooter = document.getElementById("blogFooter");
+const portfolioFooter = document.getElementById("portfolioFooter");
+
+if(footer){
+	footer.innerHTML += mainPageFooter;
+} else if(blogFooter) {
+    blogFooter.innerHTML += articleFooter;
+} else if(portfolioFooter) {
+	portfolioFooter.innerHTML += portfolioPageFooter;
+};
+
+//navigation 
+
+const blogNavHtml = `        
+            <div class="header-links">
+            
+            <div class="name-top">
+                <h1 class="main-title title-font"><a href="../../index.html">James Waterman</a></h1>
+
+                <h2 class="main-sub-heading title-font web-sub-heading"><a href="../../index.html">Travel | Photo | Web</a></h2>
+
+                <h2 class="main-sub-heading title-font mobile-sub-heading"><a href="../../index.html">Blog</a> | <a href="../../portfolio.html">Portfolio</a></h2>
+            </div>
+            
+            <nav class="link-position">
+                <a href="../../index.html" class="nav-link title-font">Home</a>
+                <a href="../../about-me.html" class="nav-link title-font">About Me</a>
+                <a href="../../contact-me.html" class="nav-link title-font">Contact Me</a>
+                <a href="../../portfolio.html" class="nav-link title-font">Portfolio</a>
+                <a href="https://www.instagram.com/james_waterman6/" target="_blank" class="nav-link title-font">
+                    <img src="../../resources/images/insta-link.png" alt="Instagram Logo">
+                </a>
+            </nav>
+                        
+
+                        <!-- Dropdown menu -->
+
+            <div class="dropdown">
+                <div class="hamburger">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </div>
+                <div class="dropdown-content">
+                    <nav>
+                        <a href="../../index.html">Home</a>
+                        <a href="../../about-me.html">About Me</a>
+                        <a href="../../contact-me.html">Contact Me</a>
+                        <a href="../../portfolio.html">Portfolio</a>
+                        <a href="https://www.instagram.com/james_waterman6/" target="_blank">Instagram</a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>`;
+
+const PortfolioNavHtml = `
+            <div class="header-links">
+
+            <div class="name-top">
+                <h1 class="main-title title-font"><a href="../index.html">James Waterman</a></h1>
+
+                <h2 class="main-sub-heading title-font web-sub-heading"><a href="../index.html">Travel | Photo | Web</a></h2>
+
+                <h2 class="main-sub-heading title-font mobile-sub-heading"><a href="../index.html">Blog</a> | <a href="../portfolio.html">Portfolio</a></h2>
+            </div>
+
+            <nav class="link-position">
+                <a href="../index.html" class="nav-link title-font">Home</a>
+                <a href="../about-me.html" class="nav-link title-font">About Me</a>
+                <a href="../contact-me.html" class="nav-link title-font">Contact Me</a>
+                <a href="../portfolio.html" class="nav-link title-font">Portfolio</a>
+                <a href="https://www.instagram.com/james_waterman6/" target="_blank" class="nav-link title-font">
+                    <img src="../resources/images/insta-link.png" alt="Instagram Logo">
+                </a>
+            </nav>
+                        
+
+                        <!-- Dropdown menu -->
+
+            <div class="dropdown">
+                <div class="hamburger">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </div>
+                <div class="dropdown-content">
+                    <nav>
+                        <a href="../index.html">Home</a>
+                        <a href="../about-me.html">About Me</a>
+                        <a href="../contact-me.html">Contact Me</a>
+                        <a href="../portfolio.html">Portfolio</a>
+                        <a href="https://www.instagram.com/james_waterman6/" target="_blank">Instagram</a>
+                    </nav>
+                </div>
+            </div>
+
+        </div>`;
+
+const blogNav = document.getElementById("blogNav");
+const portfolioNav = document.getElementById("portfolioNav")
+
+if(blogNav){
+	blogNav.innerHTML += blogNavHtml;
+} else if(portfolioNav){
+	portfolioNav.innerHTML += PortfolioNavHtml;
+};
+
+
+
+
+
+// show more/less toggle //////////////////////////////////
 
 $(document).ready(function() {
 	$('.show-button').click(function() {
@@ -25,7 +177,7 @@ $(document).ready(function() {
 	});
 });
 
-// throttle for parallax
+// throttle for parallax  //////////////////////////////////
 
 const throttle = (func, limit) => {
 
@@ -96,7 +248,7 @@ window.addEventListener('scroll', throttle(parallaxEffect, 10000));
 
 // window.addEventListener('resize', headerWidth);
 
-// portfolio toggle 
+// portfolio toggle //////////////////////////////////////
 
 const portfolioToggle = {
 	btnLeft: document.querySelector('.web-title'),
@@ -134,14 +286,17 @@ const portfolioToggle = {
 	}
 };
 
-portfolioToggle.btnLeft.addEventListener('click', portfolioToggle.showLeft);
-portfolioToggle.btnRight.addEventListener('click', portfolioToggle.showRight);
 
-portfolioToggle.webHeadLink.addEventListener('click', portfolioToggle.showLeft);
-portfolioToggle.photoHeadLink.addEventListener('click', portfolioToggle.showRight);
+if(document.getElementById("portfolioSwitch")) {
+    portfolioToggle.btnLeft.addEventListener('click', portfolioToggle.showLeft);
+    portfolioToggle.btnRight.addEventListener('click', portfolioToggle.showRight);
+
+    portfolioToggle.webHeadLink.addEventListener('click', portfolioToggle.showLeft);
+    portfolioToggle.photoHeadLink.addEventListener('click', portfolioToggle.showRight);
+}
 
 
-// Toggle feature list portfolio
+// Toggle feature list portfolio  //////////////////////////////////////////////////////
 
 let readMoreBtns = document.querySelectorAll(".show-list");
 
@@ -161,6 +316,7 @@ function changeClass(event) {
 	    $(toggleList).slideToggle(300);
 	}
 }
+
 
 
 
