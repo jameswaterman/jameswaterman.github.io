@@ -17,6 +17,39 @@ $(document).ready(function() {
 
 // Inserted html /////////////////////////////////////////////////
 
+
+  //favicon 
+
+  const favicon = `    
+    <link rel="apple-touch-icon" sizes="180x180" href="./resources/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./resources/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./resources/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./resources/images/favicon_io/site.webmanifest">`
+
+  const faviconPortfolio = `    
+    <link rel="apple-touch-icon" sizes="180x180" href="../resources/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../resources/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../resources/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../resources/images/favicon_io/site.webmanifest">`
+
+  const faviconBlog = `    
+    <link rel="apple-touch-icon" sizes="180x180" href="../../resources/images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../resources/images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../resources/images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="../../resources/images/favicon_io/site.webmanifest">`
+
+const head = document.getElementById("head");
+const headPortfolio = document.getElementById("headPortfolio");
+const headBlog = document.getElementById("headBlog");
+
+if(head){
+    head.innerHTML += favicon;
+} else if (headPortfolio) {
+    headPortfolio.innerHTML += faviconPortfolio;
+} else if(headBlog) {
+    headBlog.innerHTML += faviconBlog;
+};
+
   // footers
 
 const copyright = `<p class="center copyright">&copy; James Waterman, ` + new Date().getFullYear() + `</p>`
@@ -60,9 +93,9 @@ const portfolioFooter = document.getElementById("portfolioFooter");
 
 if(footer){
 	footer.innerHTML += mainPageFooter;
-} else if(blogFooter) {
+} else if (blogFooter){
     blogFooter.innerHTML += articleFooter;
-} else if(portfolioFooter) {
+} else if (portfolioFooter){
 	portfolioFooter.innerHTML += portfolioPageFooter;
 };
 
