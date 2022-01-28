@@ -57,8 +57,7 @@ const copyright = `<p class="center copyright">&copy; James Waterman, ` + new Da
 const mainPageFooter = `
         <div class="footerlinks">
             <a href="index.html" class="footerlink">Home</a>
-            <a href="about-me.html" class="footerlink">About Me</a>
-            <a href="contact-me.html" class="footerlink">Contact Me</a>
+            <a href="blog.html" class="footerlink">Blog</a>
             <a href="portfolio.html" class="footerlink">Portfolio</a>
             <a href="https://www.instagram.com/james_waterman6/" target="_blank" class="footerlink insta">Instagram</a>
         </div>
@@ -68,8 +67,7 @@ const mainPageFooter = `
 const articleFooter = `
         <div class="footerlinks">
             <a href="../../index.html" class="footerlink">Home</a>
-            <a href="../../about-me.html" class="footerlink">About Me</a>
-            <a href="../../contact-me.html" class="footerlink">Contact Me</a>
+            <a href="../../blog.html" class="footerlink">Blog</a>
             <a href="../../portfolio.html" class="footerlink">Portfolio</a>
             <a href="https://www.instagram.com/james_waterman6/" target="_blank" class="footerlink insta">Instagram</a>
         </div>
@@ -79,8 +77,7 @@ const articleFooter = `
 const portfolioPageFooter = `
         <div class="footerlinks">
             <a href="../index.html" class="footerlink">Home</a>
-            <a href="../about-me.html" class="footerlink">About Me</a>
-            <a href="../contact-me.html" class="footerlink">Contact Me</a>
+            <a href="../blog.html" class="footerlink">Blog</a>
             <a href="../portfolio.html" class="footerlink">Portfolio</a>
             <a href="https://www.instagram.com/james_waterman6/" target="_blank" class="footerlink insta">Instagram</a>
         </div>
@@ -106,16 +103,11 @@ const blogNavHtml = `
             
             <div class="name-top">
                 <h1 class="main-title title-font"><a href="../../index.html">James Waterman</a></h1>
-
-                <h2 class="main-sub-heading title-font web-sub-heading"><a href="../../index.html">Travel | Photo | Web</a></h2>
-
-                <h2 class="main-sub-heading title-font mobile-sub-heading"><a href="../../index.html">Blog</a> | <a href="../../portfolio.html">Portfolio</a></h2>
             </div>
             
             <nav class="link-position">
                 <a href="../../index.html" class="nav-link title-font">Home</a>
-                <a href="../../about-me.html" class="nav-link title-font">About Me</a>
-                <a href="../../contact-me.html" class="nav-link title-font">Contact Me</a>
+                <a href="../../blog.html" class="nav-link title-font">Blog</a>
                 <a href="../../portfolio.html" class="nav-link title-font">Portfolio</a>
                 <a href="https://www.instagram.com/james_waterman6/" target="_blank" class="nav-link title-font">
                     <img src="../../resources/images/insta-link.png" alt="Instagram Logo">
@@ -134,8 +126,7 @@ const blogNavHtml = `
                 <div class="dropdown-content">
                     <nav>
                         <a href="../../index.html">Home</a>
-                        <a href="../../about-me.html">About Me</a>
-                        <a href="../../contact-me.html">Contact Me</a>
+                        <a href="../../blog.html">Blog</a>
                         <a href="../../portfolio.html">Portfolio</a>
                         <a href="https://www.instagram.com/james_waterman6/" target="_blank">Instagram</a>
                     </nav>
@@ -149,16 +140,11 @@ const PortfolioNavHtml = `
 
             <div class="name-top">
                 <h1 class="main-title title-font"><a href="../index.html">James Waterman</a></h1>
-
-                <h2 class="main-sub-heading title-font web-sub-heading"><a href="../index.html">Travel | Photo | Web</a></h2>
-
-                <h2 class="main-sub-heading title-font mobile-sub-heading"><a href="../index.html">Blog</a> | <a href="../portfolio.html">Portfolio</a></h2>
             </div>
 
             <nav class="link-position">
                 <a href="../index.html" class="nav-link title-font">Home</a>
-                <a href="../about-me.html" class="nav-link title-font">About Me</a>
-                <a href="../contact-me.html" class="nav-link title-font">Contact Me</a>
+                <a href="../blog.html" class="nav-link title-font">Blog</a>
                 <a href="../portfolio.html" class="nav-link title-font">Portfolio</a>
                 <a href="https://www.instagram.com/james_waterman6/" target="_blank" class="nav-link title-font">
                     <img src="../resources/images/insta-link.png" alt="Instagram Logo">
@@ -177,8 +163,7 @@ const PortfolioNavHtml = `
                 <div class="dropdown-content">
                     <nav>
                         <a href="../index.html">Home</a>
-                        <a href="../about-me.html">About Me</a>
-                        <a href="../contact-me.html">Contact Me</a>
+                        <a href="../blog.html">Blog</a>
                         <a href="../portfolio.html">Portfolio</a>
                         <a href="https://www.instagram.com/james_waterman6/" target="_blank">Instagram</a>
                     </nav>
