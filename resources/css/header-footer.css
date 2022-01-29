@@ -245,7 +245,7 @@ h2 {
 }
 
 .header-text {
-    font-size: clamp(0.8rem, 2vw, 1.1rem);
+    font-size: clamp(0.7rem, 2vw, 1.1rem);
     font-weight: 400;
     color: white;
     text-transform: uppercase;
@@ -254,7 +254,7 @@ h2 {
     bottom: 35px;
     font-weight: 700;
     background-image: radial-gradient(rgba(50, 50, 50, 0.3), transparent 70%);
-    padding: 30px 12vw;
+    padding: 30px 6vw;
     font-family: roboto, arial;
 }
 
