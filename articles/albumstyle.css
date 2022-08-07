@@ -113,14 +113,14 @@ html {
 
 .images {
     margin: 8px 0; /*Changed from 10px*/
-    max-width: 100%;
+    width: 100%;
     height: auto; 
 }
 
 .back_to_top {
     margin: 70px 0 0 0;
-    color: grey;
-    font-size: 0.85;
+    color: #1895dc;
+    font-size: clamp(0.7rem, 3vw, 0.8rem);
     transition: color 325ms;
     text-decoration: underline;
 }

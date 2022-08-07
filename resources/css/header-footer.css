@@ -480,19 +480,19 @@ h2 {
 
 .footerlink {
     margin: 0 20px;
-    color: grey;
+    color: #1895dc;
     font-weight: 300;
     transition: color 325ms;
     text-decoration: underline;
 }
 
 .footerlinks {
-    padding: 35px;
-    font-size: 0.8rem;
+    padding: 50px 35px;
+    font-size: 0.7rem;
 }
 
 .footerlink:hover {
-    color: #222;
+    color: hsl(202, 80%, 30%);
 }
 
 .copyright {
@@ -545,9 +545,6 @@ h2 {
 
 @media only screen and (max-width: 700px) {
 
-    .footer {
-        font-size: 0.7rem;
-    }
 
     .footerlinks .insta {
         display: none;
