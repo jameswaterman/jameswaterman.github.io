@@ -126,7 +126,7 @@ html {
 }
 
 .back_to_top:hover {
-    color: #444;
+    color: hsl(202, 80%, 30%);
 }
 
 .insta-logo {

@@ -129,7 +129,9 @@ html {
 }
 
 .album-page-heading a {
-    color: grey;
+    color: #1895dc;
+    font-size: clamp(0.7rem, 3vw, 0.8rem);
+    font-weight: 300;
     -webkit-transition: color 325ms;
     transition: color 325ms;
     padding: 0 0 0 8px;
@@ -137,7 +139,7 @@ html {
 }
 
 .album-page-heading a:hover {
-    color: #444;
+    color: hsl(202, 80%, 30%);
 }
 
 .body-main {
@@ -389,8 +391,8 @@ html {
 
 .back_to_top {
     margin: 70px 0 0 0;
-    color: grey;
-    font-size: 0.85;
+    color: #1895dc;
+    font-size: clamp(0.7rem, 3vw, 0.8rem);
     -webkit-transition: color 325ms;
     transition: color 325ms;
     text-decoration: underline;
