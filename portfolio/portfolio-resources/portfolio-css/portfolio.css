@@ -464,19 +464,29 @@ html {
     }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 450px) {
 
     .row {
-        -webkit-box-flex: 100%;
-            -ms-flex: 100%;
-                flex: 100%;
-        max-width: 100%;
+        -webkit-box-flex: 47%;
+            -ms-flex: 47%;
+                flex: 47%;
+        max-width: 47%;
     }
 }
 
 @media only screen and (max-width: 300px) {
     .page-title span {
         display: none;
+    }
+}
+
+@media only screen and (max-width: 296px) {
+
+    .row {
+        -webkit-box-flex: 100%;
+            -ms-flex: 100%;
+                flex: 100%;
+        max-width: 100%;
     }
 }
 
