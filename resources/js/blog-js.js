@@ -335,6 +335,38 @@ function changeClass(event) {
 	}
 }
 
+// image zoom
+
+let displayValue = 'hidden';
+
+
+function enlargePhoto(element) {
+
+    let width = window.innerWidth;
+    let src = element.src
+    const bigImage = document.getElementById("bigImage")
+    const largeImageContainer = document.getElementById("enlarged-photo-bg-id")
+    
+    console.log(displayValue) 
+
+
+    if (displayValue === 'hidden' && width < 450) {
+        bigImage.src = src;
+        largeImageContainer.style.display = 'block';
+        displayValue = 'visable';
+        console.log(displayValue)
+        console.log("if runs");
+    } else if (displayValue === 'visable') {
+        console.log("else if runs");
+        largeImageContainer.style.display = 'none';
+        displayValue = 'hidden'
+        console.log(displayValue)
+        
+    };
+
+
+};
+
 
 
 

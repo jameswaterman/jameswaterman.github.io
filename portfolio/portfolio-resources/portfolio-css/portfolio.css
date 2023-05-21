@@ -406,6 +406,29 @@ html {
     font-weight: bold;
 }
 
+.enlarged-photo {
+    width: 80%;
+    max-width: 80%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: auto;
+    z-index: 101;
+/*    box-shadow: 0 0 10px 20px hsla(136, 0%, 70%, 0.7);*/
+}
+
+.enlarged-photo-background {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: hsla(136, 0%, 70%, 0.9);
+    z-index: 100;
+    display: none;
+}
+
+
+
 
 
 
@@ -471,6 +494,18 @@ html {
             -ms-flex: 47%;
                 flex: 47%;
         max-width: 47%;
+    }
+
+    .body-album {
+        width: 96%;
+    }
+
+    .back-arrow {
+        padding-left: 2%;
+    }
+
+    .page-title {
+        padding-left: 2%;
     }
 }
 
