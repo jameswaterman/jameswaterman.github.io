@@ -341,7 +341,7 @@ let displayValue = 'hidden';
 
 
 function enlargePhoto(element) {
-
+    let height = window.innerHeight;
     let width = window.innerWidth;
     let src = element.src
     const bigImage = document.getElementById("bigImage")
@@ -350,7 +350,7 @@ function enlargePhoto(element) {
     console.log(displayValue) 
 
 
-    if (displayValue === 'hidden' && width < 450) {
+    if (displayValue === 'hidden' && width < 600 && width < height) {
         bigImage.src = src;
         largeImageContainer.style.display = 'block';
         displayValue = 'visable';

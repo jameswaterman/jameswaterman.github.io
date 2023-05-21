@@ -415,14 +415,14 @@ html {
     transform: translate(-50%, -50%);
     margin: auto;
     z-index: 101;
-/*    box-shadow: 0 0 10px 20px hsla(136, 0%, 70%, 0.7);*/
+    box-shadow: 0 0 30px 8px hsla(136, 0%, 60%, 0.9);
 }
 
 .enlarged-photo-background {
     position: fixed;
     height: 100%;
     width: 100%;
-    background-color: hsla(136, 0%, 70%, 0.9);
+    background-color: hsla(136, 0%, 70%, 0.8);
     z-index: 100;
     display: none;
 }
