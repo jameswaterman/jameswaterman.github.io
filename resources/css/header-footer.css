@@ -168,7 +168,7 @@ h2 {
 }
 
 .header_banner {
-    height: clamp(85px, 15vw, 100px);
+    height: clamp(85px, 13vw, 100px);
     width:100%;
     background-color: hsla(0, 0%, 100%, .8);
         display: flex;

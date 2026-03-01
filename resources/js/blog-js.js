@@ -387,10 +387,15 @@ function backgroundSelector() {
 
 backgroundSelector();
 
+let lastWidth = window.innerWidth;
+
 let resizeTimeout;
 window.addEventListener("resize", () => {
-  clearTimeout(resizeTimeout);
-  resizeTimeout = setTimeout(backgroundSelector, 200);
+    if (Math.abs(currentWidth - lastWidth) < 10) {
+        lastWidth = window.innerWidth;
+        clearTimeout(resizeTimeout);
+        resizeTimeout = setTimeout(backgroundSelector, 200);
+    };
 });
 
 
