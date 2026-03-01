@@ -167,9 +167,27 @@ h2 {
     height: 100%;
 }
 
+.header_banner {
+    height: clamp(85px, 15vw, 100px);
+    width:100%;
+    background-color: hsla(0, 0%, 100%, .8);
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    /*height: 100px;*/
+    position: absolute;
+    top: 0;
+    width: 100%;
+    max-width: 1075px;
+    z-index: 4;
+    border-radius: 0 0 3px 3px;
+}
+
 .header-background {
     height: max(550px, 100vh);
-    background-image: url("../images/landing-photo3.jpg");
+    /*background-image: url("../images/landing-photo3.jpg");*/
+    /*background-image: url("../article-images/10-treereflection.jpg");*/
+    /*background-image: url(../../articles/3-austria-dec2017-apr2018/images/mountaincloud.jpg);*/
     background-size: cover;
     background-position: center;
     margin-bottom: 0;

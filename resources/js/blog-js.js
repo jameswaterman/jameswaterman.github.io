@@ -367,7 +367,31 @@ function enlargePhoto(element) {
 
 };
 
+// Header home page background image function
 
+
+const backgroundImageList = ["lights", "cactus", "landing-photo3", "trees", "ridge", "waterfall"];
+      backgroundImageListMobile = ["lights", "cactus", "landing-photo-mobile", "trees", "ridge", "waterfall-mobile"];
+
+function backgroundSelector() {
+    let randomNum = Math.floor(Math.random() * 6);
+        headerBackground = document.getElementById('HB');
+    console.log(window.innerWidth);
+    if(window.innerWidth > 480) {
+        headerBackground.style.backgroundImage = "url('./resources/home-background/"+backgroundImageList[randomNum]+".jpg')";
+    } else {
+        headerBackground.style.backgroundImage = "url('./resources/home-background/"+backgroundImageListMobile[randomNum]+".jpg')";
+    }
+    console.log('i run');
+};
+
+backgroundSelector();
+
+let resizeTimeout;
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimeout);
+  resizeTimeout = setTimeout(backgroundSelector, 200);
+});
 
 
 
