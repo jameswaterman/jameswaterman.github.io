@@ -371,30 +371,30 @@ function enlargePhoto(element) {
 
 
 const backgroundImageList = ["lights", "cactus", "landing-photo3", "trees", "ridge", "waterfall"];
-      backgroundImageListMobile = ["lights", "cactus", "landing-photo-mobile", "trees", "ridge", "waterfall-mobile"];
+      backgroundImageListMobile = ["lights", "cactus", "landing-photo-mobile", "trees", "waterfall-mobile"];
 
 function backgroundSelector() {
-    let randomNum = Math.floor(Math.random() * 6);
         headerBackground = document.getElementById('HB');
     console.log(window.innerWidth);
     if(window.innerWidth > 480) {
-        headerBackground.style.backgroundImage = "url('./resources/home-background/"+backgroundImageList[randomNum]+".jpg')";
+                headerBackground.style.backgroundImage = "url('./resources/home-background/"+backgroundImageList[Math.floor(Math.random() * 6)]+".jpg')";
     } else {
-        headerBackground.style.backgroundImage = "url('./resources/home-background/"+backgroundImageListMobile[randomNum]+".jpg')";
+        headerBackground.style.backgroundImage = "url('./resources/home-background/"+backgroundImageListMobile[Math.floor(Math.random() * 5)]+".jpg')";
     }
-    console.log('i run');
 };
 
 backgroundSelector();
 
 let lastWidth = window.innerWidth;
-
 let resizeTimeout;
+
 window.addEventListener("resize", () => {
-    if (Math.abs(currentWidth - lastWidth) < 10) {
+    const currentWidth = window.innerWidth;
+    if (Math.abs(currentWidth - lastWidth) > 100) {
         lastWidth = window.innerWidth;
         clearTimeout(resizeTimeout);
-        resizeTimeout = setTimeout(backgroundSelector, 200);
+        resizeTimeout = setTimeout(backgroundSelector, 2000);
+        console.log("this pRT works")
     };
 });
 
